@@ -1,6 +1,7 @@
  
 import './App.css'
 import Navbar from './components/Navbar/navbar'
+import Hero from './components/Hero/Hero'
 import Moreburger from './components/More-than-burger/More-than-burger'
 import BestSells from './components/Best-sells/Best-sells'
 import AboutUs from './components/About-us/About-us'
@@ -12,13 +13,12 @@ function App() {
   return (
     <>
       <Navbar />
+      <Hero />
       <Moreburger />
       <BestSells />
       <AboutUs />
       <FindUs />
       <Footer />
-      
-      
     </>
   )
 }

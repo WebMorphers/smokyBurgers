@@ -1,9 +1,8 @@
-import React from 'react'
 
 const BestSells = () => {
   return (
     <div>
-        Best
+        Best Sells
     </div>
   )
 }

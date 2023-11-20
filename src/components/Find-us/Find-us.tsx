@@ -1,8 +1,7 @@
-import React from 'react'
 
 const FindUs = () => {
   return (
-    <div>U</div>
+    <div>Find Us</div>
   )
 }
 
