@@ -1,6 +1,6 @@
  
 import './App.css'
-import navbar from './components/Navbar/navbar'
+import Navbar from './components/Navbar/navbar'
 import Moreburger from './components/More-than-burger/More-than-burger'
 import BestSells from './components/Best-sells/Best-sells'
 import AboutUs from './components/About-us/About-us'
@@ -11,7 +11,13 @@ function App() {
 
   return (
     <>
-
+      <Navbar />
+      <Moreburger />
+      <BestSells />
+      <AboutUs />
+      <FindUs />
+      <Footer />
+      
       
     </>
   )
