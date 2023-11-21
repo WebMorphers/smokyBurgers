@@ -2,13 +2,9 @@ import Navbar from "../Navbar/navbar";
 import img from "../../assets/imaagehero.png";
 
 import "./hero.css";
-import { motion } from "framer-motion";
-
+ 
 const Hero = () => {
-  const animationVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
+  
 
   const heroStyle = {
     backgroundImage: `url(${img})`,
@@ -20,11 +16,14 @@ const Hero = () => {
 
   return (
     <div
-      className="hero w-full relative z-0 flex flex-col justify-center items-center bg-[#160808]"
+      className="hero w-full z-0 flex flex-col justify-center items-center bg-[#160808]"
       style={heroStyle}
       id="hero"
     >
       <Navbar />
+      <h1 className="text-9xl">SMOKY BURGERS</h1>
+      <button className="bg-red-700 text-white om text-3xl p-2 rounded-2xl font-extrabold  absolute bottom-36 ">Our menu</button>
+
     </div>
   );
 };
