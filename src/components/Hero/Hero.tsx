@@ -2,6 +2,7 @@ import Navbar from "../Navbar/navbar";
 import img from "../../assets/imaagehero.png";
 
 import "./hero.css";
+import Frita from "../frita"
  
 const Hero = () => {
   
@@ -16,14 +17,15 @@ const Hero = () => {
 
   return (
     <div
-      className="hero w-full z-0 flex flex-col justify-center items-center bg-[#160808]"
+      className="hero w-full z-0 flex flex-col justify-end pb-20 gap-12 items-center bg-[#160808]"
       style={heroStyle}
       id="hero"
     >
       <Navbar />
+      <Frita />
       <h1 className="text-9xl">SMOKY BURGERS</h1>
-      <button className="bg-red-700 text-white om text-3xl p-2 rounded-2xl font-extrabold  absolute bottom-36 ">Our menu</button>
-
+      <button className="bg-red-700 text-white om text-xl p-2 px-3 border-gray-400 border rounded-2xl font-extrabold  bottom-36 ">Our menu</button>
+      
     </div>
   );
 };
