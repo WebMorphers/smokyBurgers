@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 .title{
     font-family: 'Tourney', sans-serif;
+}
+.description{
+    font-family: 'Abel', sans-serif;
+    }
+    @keyframes bounce-right {
+        0%, 100% {
+            transform: translateY(-20%) rotate(20deg);
+        }
+        50% {
+            transform: translateY(0) rotate(10deg);
+        }
+    }
+    @keyframes bounce-left {
+        0%, 100% {
+            transform: translateY(-20%) rotate(-20deg);
+        }
+        50% {
+            transform: translateY(0) rotate(-10deg);
+        }
+    }
+.bounce-right {
+    animation: bounce-right 2s ease-in-out infinite;
+}
+
+.bounce-left {
+    animation: bounce-left 2s ease-in-out infinite;
 }

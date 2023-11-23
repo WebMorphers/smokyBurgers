@@ -23,8 +23,8 @@ const Hero = () => {
     >
       <Navbar />
       <Frita />
-      <h1 className="text-9xl">SMOKY BURGERS</h1>
-      <button className="bg-red-700 text-white om text-xl p-2 px-3 border-gray-400 border rounded-2xl font-extrabold  bottom-36 ">Our menu</button>
+      <h1 className=" title__hero text-9xl">SMOKY BURGERS</h1>
+      <button className="bg-[#FE181A] text-white om text-xl p-2 px-3 border-gray-400 border rounded-2xl bottom-36 ">Our menu</button>
       
     </div>
   );
