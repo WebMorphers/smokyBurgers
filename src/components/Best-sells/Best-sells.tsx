@@ -2,6 +2,7 @@ import classical from '../../assets/classical-chicken.png'
 import avocado from '../../assets/chicken-avocado.png'
 import secret from '../../assets/secret-burger.png'
 import './Best-sells.css'
+import frita from '../../assets/frita.svg'
 
 
 const BestSells = () => {
@@ -12,7 +13,10 @@ const BestSells = () => {
           <h1>Our Best Sells Of All Time !</h1>
         </div>
         <div className='flex flex-col justify-center items-center gap-5'>
-          <div>
+          <div className='relative'>
+          <img className='absolute -top-12 -right-12 w-28 animate-bounceRightFrita ' src={frita} alt="" />
+          <img className='absolute -bottom-12 -left-12 w-28 animate-bounceLeftFrita ' src={frita} alt="" />
+
             <div className='grid md:grid-cols-3 gap-5'>
               <div className='flex flex-col items-center justify-center overflow-hidden'>
                 <div className=''>

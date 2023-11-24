@@ -1,7 +1,9 @@
 import Map from "../mapContainer"
 const FindUs = () => {
   return (
-    <div><Map /></div>
+    <div className="cont">
+      <Map />
+      </div>
   )
 }
 

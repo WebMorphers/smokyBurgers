@@ -15,11 +15,22 @@ export default {
           '0% , 100%' :{ transform: 'translateY(-25%) rotate(-20deg)'},
           '50%' : {transform: 'translateY(0) rotate(-15deg)'} 
         },
+        bounceRightFrita:{
+          '0% , 100%' :{ transform: 'translateY(-25%) rotate(120deg)'},
+          '50%' : {transform: 'translateY(0) rotate(115deg)'} 
+        },
+        bounceLeftFrita:{
+          '0% , 100%' :{ transform: 'translateY(-25%) rotate(-120deg)'},
+          '50%' : {transform: 'translateY(0) rotate(-115deg)'} 
+        },
+
         
       },
       animation:{
           bounceRight: 'bounceRight 2s ease-in-out infinite',
           bounceLeft: 'bounceLeft 2s ease-in-out infinite',
+          bounceRightFrita: 'bounceRightFrita 2s ease-in-out infinite',
+          bounceLeftFrita: 'bounceLeftFrita 2s ease-in-out infinite',
 
       }
     },
