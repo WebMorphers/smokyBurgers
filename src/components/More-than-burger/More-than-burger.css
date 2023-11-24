@@ -7,26 +7,28 @@
 .description{
     font-family: 'Abel', sans-serif;
     }
-    @keyframes bounce-right {
-        0%, 100% {
-            transform: translateY(-20%) rotate(20deg);
-        }
-        50% {
-            transform: translateY(0) rotate(10deg);
-        }
-    }
-    @keyframes bounce-left {
-        0%, 100% {
-            transform: translateY(-20%) rotate(-20deg);
-        }
-        50% {
-            transform: translateY(0) rotate(-10deg);
-        }
-    }
-.bounce-right {
-    animation: bounce-right 2s ease-in-out infinite;
+#light{
+    text-transform: uppercase; 
+    -webkit-box-reflect: below 1px linear-gradient(linear, left top, left bottom, from(transparent), to(white)); 
+    animation: animate 5s linear infinite;
 }
 
-.bounce-left {
-    animation: bounce-left 2s ease-in-out infinite;
+@keyframes animate
+{
+    0%,18%,20%,50.1%, 60%, 65.1%, 80%,90.1%,92%
+     {
+         color:#FB8A8A;
+        text-shadow: none;
+     }
+    18.1%,20.1%, 30%, 50%, 60.1%, 65%, 80.1% ,90%, 92.1%, 100%
+    {   
+        color:#fff;
+        text-shadow: 0 0 5px #FB8A8A,            
+        0 0 15px #FB8A8A,           
+        0 0 35px  #FB8A8A,        
+        0 0 75px #FB8A8A,   
+        0 0 155px #FB8A8A;
+                   
+    }
+
 }
