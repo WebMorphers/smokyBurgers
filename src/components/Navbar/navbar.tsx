@@ -42,7 +42,7 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-normal	text-white hover:text-amber-400"
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
             href="/"
           >
             About us
@@ -50,7 +50,7 @@ const Navbar = () => {
         </li>
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-normal	text-white hover:text-amber-400"
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
             onClick={() => scrollToSection("projects")}
             href="#about"
           >
@@ -58,12 +58,12 @@ const Navbar = () => {
           </a>
         </li>
         <li className="p-4">
-          <a className="no-underline mx-4 cursor-pointer font-normal	text-white hover:text-amber-400">
+          <a className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600">
             Favorites
           </a>
         </li>
         <li className="p-4">
-          <a className="no-underline mx-4 cursor-pointer font-normal	text-white hover:text-amber-400">
+          <a className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600">
             Find us
           </a>
         </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
           <div className="absolute top-0 object-top z-0"></div>
           <li className="p-4 ">
             <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-amber-400"
+              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
               onClick={() => {
                 scrollToSection("projects"), chang();
               }}
@@ -107,7 +107,7 @@ const Navbar = () => {
           <li className="p-4">
             {" "}
             <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-amber-400"
+              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
               onClick={() => {
                 scrollToSection("projects"), chang();
               }}
@@ -118,7 +118,7 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-amber-400"
+              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
               onClick={() => scrollToSection("projects")}
               href="/menu"
             >

@@ -16,12 +16,12 @@ export default {
           '50%' : {transform: 'translateY(0) rotate(-15deg)'} 
         },
         bounceRightFrita:{
-          '0% , 100%' :{ transform: 'translateY(-25%) rotate(120deg)'},
-          '50%' : {transform: 'translateY(0) rotate(115deg)'} 
+          '0% , 100%' :{ transform: 'translateY(-25%) rotate(50deg)'},
+          '50%' : {transform: 'translateY(0) rotate(45deg)'} 
         },
         bounceLeftFrita:{
-          '0% , 100%' :{ transform: 'translateY(-25%) rotate(-120deg)'},
-          '50%' : {transform: 'translateY(0) rotate(-115deg)'} 
+          '0% , 100%' :{ transform: 'translateY(-25%) rotate(-10deg)'},
+          '50%' : {transform: 'translateY(0) rotate(-5deg)'} 
         },
 
         

@@ -12,24 +12,22 @@ const BestSells = () => {
         <div className="text-black text-3xl sm:text-5xl title font-semibold ">
           <h1>Our Best Sells Of All Time !</h1>
         </div>
-        <div className='flex flex-col justify-center items-center gap-5'>
-          <div className='relative'>
-          <img className='absolute -top-12 -right-12 w-28 animate-bounceRightFrita ' src={frita} alt="" />
-          <img className='absolute -bottom-12 -left-12 w-28 animate-bounceLeftFrita ' src={frita} alt="" />
+        <div className='flex flex-col justify-center items-center gap-5 relative'>
+          <img className='absolute max-md:w-20 max-sm:right-0 -top-12 -right-12 w-28 animate-bounceRightFrita ' src={frita} alt="" />
+          <img className='absolute max-md:w-20  -bottom-12 max-sm:left-0 -left-12 w-28 animate-bounceLeftFrita ' src={frita} alt="" />
 
             <div className='grid md:grid-cols-3 gap-5'>
               <div className='flex flex-col items-center justify-center overflow-hidden'>
-                <div className=''>
-                  <div className='bg-[#FA8072] rounded-3xl h-full flex justify-end items-end'>
+                
+                  <div className='bg-[#FA8072] rounded-3xl h-full w-full flex justify-center items-end'>
                     <img className='bottom-0' src={classical} alt="" />
-                  </div>
                 </div>
                 <div className='text-xl font-semibold p-3'>
                     <h4> Classical Chicken </h4>
                 </div>
               </div>
               <div className='flex flex-col items-center justify-center overflow-hidden '>
-                  <div className='bg-[#87CEFA] rounded-3xl flex justify-end items-end h-full'>
+                  <div className='bg-[#87CEFA] rounded-3xl flex justify-center items-end h-full w-full'>
                     <img className='bg-cover bottom-0 ' src={avocado} alt="" />
                   </div>
                 <div className='text-xl font-semibold p-3'>
@@ -37,7 +35,7 @@ const BestSells = () => {
                 </div>
               </div>
               <div className='flex flex-col items-center justify-center overflow-hidden'>
-                  <div className='bg-[#faa4a4] rounded-3xl flex justify-end items-end h-full'>
+                  <div className='bg-[#faa4a4] rounded-3xl flex justify-center items-end h-full'>
                     <img className='bg-cover bottom-0' src={secret} alt="" />
                   </div>
                 <div className='text-xl font-semibold p-3'>
@@ -51,7 +49,6 @@ const BestSells = () => {
           <p className='desc text-center'>Stop looking at it and come by and grab one!</p>
         </div>
       </div>
-    </div>
   )
 }
 
