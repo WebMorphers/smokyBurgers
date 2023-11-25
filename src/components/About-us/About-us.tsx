@@ -17,7 +17,7 @@ import vid12 from '../../assets/vid-toto.mp4';
 const AboutUs = () => {
   return (
     <div className='cont'>
-    <div className="py-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-36 flex flex-col justify-center items-center gap-5">
+    <div className=" sm:px-8 md:px-12 lg:px-20 xl:px-36 flex flex-col justify-center items-center gap-5">
     <h1 className="text-4xl sm:text-5xl lg:text-6xl title text-center">Taste Like Never Before .</h1>
 
     <h1 className="text-sky-950 text-center">
@@ -33,7 +33,7 @@ const AboutUs = () => {
       sur Instagram pour plus d'inspiration en brownies gourmets !
     </h1>
 
-    <div className='grid lg:grid-cols-4 gap-4'>
+    <div className='grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4'>
       <div className=''><HoverVideoPlayer videoSrc= {vid1} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid2} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid3} /></div> 
