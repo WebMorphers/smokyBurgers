@@ -35,10 +35,9 @@ const Hero = () => {
         alt=""
       />
       <Navbar />
-      <h1 className=" title__hero text-9xl z-10 text-center">SMOKY BURGERS</h1>
-      <button className="bg-[#FE181A] text-white om text-xl p-2 px-3 z-10 border-gray-400 border rounded-2xl bottom-36 ">
-        Our menu
-      </button>
+      <h1 className=" title__hero text-9xl max-sm:text-8xl text-center">SMOKY BURGERS</h1>
+      <button className="bg-[#FE181A] text-white om text-xl p-2 px-3 border-gray-400 border rounded-2xl bottom-36 ">Our menu</button>
+      
     </div>
   );
 };
