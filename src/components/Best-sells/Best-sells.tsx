@@ -1,8 +1,12 @@
 import classical from '../../assets/classical-chicken.png'
+import classicalHolder from '../../assets/classical-chicken-placehold.png'
 import avocado from '../../assets/chicken-avocado.png'
 import secret from '../../assets/secret-burger.png'
 import './Best-sells.css'
 import frita from '../../assets/frita.svg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+
 
 
 const BestSells = () => {
@@ -20,7 +24,7 @@ const BestSells = () => {
               <div className='flex flex-col items-center justify-center overflow-hidden'>
                 
                   <div className='bg-[#FA8072] rounded-3xl h-full w-full flex justify-center items-end'>
-                    <img className='bottom-0' src={classical} alt="" />
+                    <LazyLoadImage  className='bottom-0' effect="blur" placeholderSrc={classicalHolder}  src={classical} alt="" />
                 </div>
                 <div className='text-xl font-semibold p-3'>
                     <h4> Classical Chicken </h4>
@@ -28,7 +32,7 @@ const BestSells = () => {
               </div>
               <div className='flex flex-col items-center justify-center overflow-hidden '>
                   <div className='bg-[#87CEFA] rounded-3xl flex justify-center items-end h-full w-full'>
-                    <img className='bg-cover bottom-0 ' src={avocado} alt="" />
+                    <LazyLoadImage  className='bg-cover bottom-0 'src={avocado} alt="" />
                   </div>
                 <div className='text-xl font-semibold p-3'>
                     <h4> Chicken Avocado </h4>
@@ -36,7 +40,7 @@ const BestSells = () => {
               </div>
               <div className='flex flex-col items-center justify-center overflow-hidden'>
                   <div className='bg-[#faa4a4] rounded-3xl flex justify-center items-end h-full'>
-                    <img className='bg-cover bottom-0' src={secret} alt="" />
+                    <LazyLoadImage  className='bg-cover bottom-0'  src={secret} alt="" />
                   </div>
                 <div className='text-xl font-semibold p-3'>
                     <h4> Secret Burger </h4>
