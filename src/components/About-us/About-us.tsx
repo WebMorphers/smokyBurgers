@@ -11,6 +11,7 @@ import vid9 from '../../assets/vid-lmahal.mp4';
 import vid10 from '../../assets/vid-malha.mp4';
 import vid11 from '../../assets/vid-snor.mp4';
 import vid12 from '../../assets/vid-toto.mp4';
+import './About-us.css'
 
 
 
@@ -34,7 +35,18 @@ const AboutUs = () => {
     </h1>
 
     <div className='grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-      <div className=''><HoverVideoPlayer videoSrc= {vid1} /></div> 
+      <div className=''><HoverVideoPlayer loadingOverlay={
+        <div className="animate-pulse flex flex-col items-center gap-4 w-60">
+        <div>
+          <div className="w-48 h-6 bg-slate-400 rounded-md"></div>
+          <div className="w-28 h-4 bg-slate-400 mx-auto mt-3 rounded-md"></div>
+        </div>
+        <div className="h-7 bg-slate-400 w-full rounded-md"></div>
+        <div className="h-7 bg-slate-400 w-full rounded-md"></div>
+        <div className="h-7 bg-slate-400 w-full rounded-md"></div>
+        <div className="h-7 bg-slate-400 w-1/2 rounded-md"></div>
+      </div>
+      } videoSrc= {vid1} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid2} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid3} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid4} /></div> 
