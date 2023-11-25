@@ -32,19 +32,19 @@ const AboutUs = () => {
       sur Instagram pour plus d'inspiration en brownies gourmets !
     </h1>
 
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-      <div><HoverVideoPlayer videoSrc= {vid1} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid2} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid3} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid4} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid5} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid6} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid7} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid8} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid9} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid10} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid11} /></div> 
-      <div><HoverVideoPlayer videoSrc= {vid12} /></div> 
+    <div className='grid grid-cols-4 grid-rows-3  gap-4'>
+      <div className=''><HoverVideoPlayer videoSrc= {vid1} /></div> 
+      <div className=''><HoverVideoPlayer videoSrc= {vid2} /></div> 
+      <div className=''><HoverVideoPlayer videoSrc= {vid3} /></div> 
+      <div className=''><HoverVideoPlayer videoSrc= {vid4} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid5} /></div> 
+      <div className='sm:block '><HoverVideoPlayer videoSrc= {vid6} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid7} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid8} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid9} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid10} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid11} /></div> 
+      <div className='sm:block'><HoverVideoPlayer videoSrc= {vid12} /></div> 
 </div>
     </div>
     
