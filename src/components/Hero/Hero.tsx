@@ -21,12 +21,12 @@ const Hero = () => {
       className=" w-full h-screen opa z-0 flex flex-col justify-end pb-20 gap-12 items-center relative bg-[#160808]"
       id="hero"
     >
-      <img className="z-0 opacity-40 bg-cover left-0 top-0 bottom-0 my-auto absolute h-[100vh] " src={imgLeft} alt="" />
-      <img className="z-0 opacity-40 bg-cover right-0 max-xl:-right-32 top-0 bottom-0 my-auto absolute h-[100vh] " src={imgRight} alt="" />
-      <img className="z-0 hidden md:block opacity-30 bg-cover right-0 left-0 top-0 bottom-0 m-auto absolute h-[100vh] " src={imgMid} alt="" />
+      <img className="z-0 hidden md:block opacity-40 left-0 top-0 bottom-0 my-auto absolute h-[100vh] " src={imgLeft} alt="" />
+      <img className="z-0 hidden md:block opacity-40 right-0 max-xl:-right-32 top-0 bottom-0 my-auto absolute h-[100vh] " src={imgRight} alt="" />
+      <img className="z-0  opacity-30 md:opacity-50  right-0 left-0 top-0 bottom-0 m-auto absolute h-[100vh] " src={imgMid} alt="" />
       <Navbar />
       <h1 className=" title__hero text-9xl z-10 text-center">SMOKY BURGERS</h1>
-      <button className="bg-[#FE181A] text-white om text-xl p-2 px-3 border-gray-400 border rounded-2xl bottom-36 ">Our menu</button>
+      <button className="bg-[#FE181A] text-white om text-xl p-2 px-3 z-10 border-gray-400 border rounded-2xl bottom-36 ">Our menu</button>
       
     </div>
   );
