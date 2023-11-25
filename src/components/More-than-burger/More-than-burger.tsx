@@ -4,7 +4,7 @@ import burger from "../../assets/burger.svg"
 const Moreburger = () => {
   return (
     <div className="cont">
-        <div className=" flex max-sm:flex-col items-center justify-between gap-12 relative">
+        <div className=" flex max-sm:flex-col items-center justify-between 2xl:justify-center 2xl:gap-20 gap-12 relative">
             <div className='bg-[#FB8A8A] rounded-[40px] flex justify-center'>
               <img className='pt-24 ' src={moreburger}  />
             </div>
