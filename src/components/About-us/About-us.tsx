@@ -37,14 +37,14 @@ const AboutUs = () => {
       <div className=''><HoverVideoPlayer videoSrc= {vid2} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid3} /></div> 
       <div className=''><HoverVideoPlayer videoSrc= {vid4} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid5} /></div> 
-      <div className='hidden ms:block '><HoverVideoPlayer videoSrc= {vid6} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid7} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid8} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid9} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid10} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid11} /></div> 
-      <div className='hidden ms:block'><HoverVideoPlayer videoSrc= {vid12} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid5} /></div> 
+      <div className='hidden sm:block '><HoverVideoPlayer videoSrc= {vid6} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid7} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid8} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid9} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid10} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid11} /></div> 
+      <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid12} /></div> 
 </div>
     </div>
     
