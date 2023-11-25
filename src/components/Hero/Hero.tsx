@@ -1,6 +1,5 @@
 import Navbar from "../Navbar/navbar";
 import img from "../../assets/imaagehero.png";
-import imgMid from '../../assets/img-mid.png'
 
 import "./hero.css";
  
