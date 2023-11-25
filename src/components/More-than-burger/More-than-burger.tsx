@@ -16,7 +16,7 @@ const Moreburger = () => {
                 Giving the customer a burger that ticks all the boxes from taste to price to quality. 
               </div>
               
-              <img src={burger} className=' max-md:w-16 absolute bottom-0 top-0 my-auto right-0 animate-bounceRight' alt="" />
+              <img src={burger} className=' max-md:w-16 absolute bottom-0 top-0 my-auto right-0 xl:top-40   animate-bounceRight' alt="" />
 
             </div>
 
