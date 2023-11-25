@@ -17,20 +17,20 @@ import vid12 from '../../assets/vid-toto.mp4';
 const AboutUs = () => {
   return (
     <div className='cont'>
-    <div className=" sm:px-8 md:px-12 lg:px-20 xl:px-36 flex flex-col justify-center items-center gap-5">
+    <div className=" flex flex-col justify-center items-center gap-5">
     <h1 className="text-4xl sm:text-5xl lg:text-6xl title text-center">Taste Like Never Before .</h1>
 
     <h1 className="text-sky-950 text-center">
-      Suivez{" "}
+    Follow{" "}
       <a
-        href="https://www.instagram.com/comptoir.sucre/"
+        href="https://www.instagram.com/smokyburgersmaroc/"
         target="_blank"
         rel="noopener noreferrer"
         className="visited:text-black hover:text-neutral-700 text-inherit"
       >
-        <span className="underline">@comptoir.sucre</span>
+        <span className="underline">@smokyburgers</span>
       </a>{" "}
-      sur Instagram pour plus d'inspiration en brownies gourmets !
+      on Instagram for more burger inspiration !
     </h1>
 
     <div className='grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4'>
