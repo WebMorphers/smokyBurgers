@@ -19,18 +19,20 @@ const FindUs = () => {
             <div className="flex justify-center items-center gap-3">
               <img src={location} alt="" />
               <p className="adress font-extrabold text-lg">
-                18A Avenue Tantan, residence jardin du phare
+                18A Avenue Tantan , residence jardin du phare
               </p>
             </div>
             <div className="flex justify-center items-center gap-3">
               <img src={phone} alt="" />
-              <p className="text-[#3E84D8]">0520273808</p>
+              <p className="text-[#3E84D8]">0520-273808</p>
             </div>
             <div className="flex justify-center items-center gap-3">
               <img src={time} alt="" />
               <p className="text-slate-800">
-                Tue-Sun:
-                <span className="text-[#3E84D8] font-medium">12AM-11PM</span>
+                Tue-Sun :
+                <span className="text-[#3E84D8] font-medium">
+                  12 AM - 11 PM
+                </span>
               </p>
             </div>
           </div>
