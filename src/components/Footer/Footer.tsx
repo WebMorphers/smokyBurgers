@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./footer.css";
 import logo from "../../assets/logohd.png";
 import insta from "../../assets/instagram-svg.svg";
 import glovo from "../../assets/glovo-svg.svg";
