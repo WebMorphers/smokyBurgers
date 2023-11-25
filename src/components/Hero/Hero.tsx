@@ -1,9 +1,7 @@
 import Navbar from "../Navbar/navbar";
 import img from "../../assets/imaagehero.png";
 
-import "./hero.css";
-import Frita from "../frita"
- 
+import "./hero.css"; 
 const Hero = () => {
   
 
@@ -22,7 +20,6 @@ const Hero = () => {
       id="hero"
     >
       <Navbar />
-      <Frita />
       <h1 className=" title__hero text-9xl">SMOKY BURGERS</h1>
       <button className="bg-[#FE181A] text-white om text-xl p-2 px-3 border-gray-400 border rounded-2xl bottom-36 ">Our menu</button>
       
