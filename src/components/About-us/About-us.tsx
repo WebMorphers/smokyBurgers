@@ -16,6 +16,7 @@ import vid12 from '../../assets/vid-toto.mp4';
 
 const AboutUs = () => {
   return (
+    <div className='cont'>
     <div className="py-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-36 flex flex-col justify-center items-center gap-5">
     <h1 className="text-4xl sm:text-5xl lg:text-6xl title text-center">Taste Like Never Before .</h1>
 
@@ -45,9 +46,9 @@ const AboutUs = () => {
       <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid10} /></div> 
       <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid11} /></div> 
       <div className='hidden sm:block'><HoverVideoPlayer videoSrc= {vid12} /></div> 
-</div>
+      </div>
     </div>
-    
+    </div>
   )
 }
 
