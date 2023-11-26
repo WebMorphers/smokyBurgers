@@ -63,37 +63,91 @@ const AboutUs = () => {
             />
           </div>
           <div className="">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid2} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid2}
+            />
           </div>
           <div className="">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid3} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPausedloading="lazy"
+              videoSrc={vid3}
+            />
           </div>
           <div className="">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid4} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid4}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid5} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid5}
+            />
           </div>
           <div className="hidden sm:block ">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid6} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid6}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid7} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid7}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid8} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid8}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid9} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid9}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid10} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid10}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid11} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid11}
+            />
           </div>
           <div className="hidden sm:block">
-            <HoverVideoPlayer loading="lazy" videoSrc={vid12} />
+            <HoverVideoPlayer
+              loop={true}
+              restartOnPaused
+              loading="lazy"
+              videoSrc={vid12}
+            />
           </div>
         </div>
       </div>
