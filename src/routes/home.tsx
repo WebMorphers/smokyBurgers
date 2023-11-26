@@ -1,5 +1,4 @@
-import React from 'react'
-
+ 
 import Navbar from "../components/PAGE1/Navbar/navbar";
 import Hero from "../components/PAGE1/Hero/Hero";
 import Moreburger from "../components/PAGE1/More-than-burger/More-than-burger";
