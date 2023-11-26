@@ -1,7 +1,13 @@
- 
+import Navbar from "../components/PAGE1/Navbar/navbar";
+
 const menu = () => {
   return (
-    <div>menu</div>
+    <>
+
+
+    <Navbar />
+    
+    </>
   )
 }
 
