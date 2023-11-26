@@ -4,7 +4,7 @@ import avocado from '../../../assets/chicken-avocado.png'
 import secret from '../../../assets/secret-burger.png'
 import './Best-sells.css'
 import frita from '../../../assets/frita.svg'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
@@ -24,7 +24,7 @@ const BestSells = () => {
               <div className='flex flex-col items-center justify-center overflow-hidden'>
                 
                   <div className='bg-[#FA8072] rounded-3xl h-full w-full flex justify-center items-end'>
-                    <LazyLoadImage  className='bottom-0'  placeholderSrc={classicalHolder}  src={classical} alt="" />
+                    <LazyLoadImage  className='bottom-0' src={classical} alt="" />
                 </div>
                 <div className='text-xl font-semibold p-3'>
                     <h4> Classical Chicken </h4>
