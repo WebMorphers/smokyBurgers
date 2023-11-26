@@ -1,6 +1,6 @@
-import moreburger from "../../assets/more-burger.png";
+import moreburger from "../../../assets/more-burger.png";
 import "./More-than-burger.css";
-import burger from "../../assets/burger.svg";
+import burger from "../../../assets/burger.svg";
 const Moreburger = () => {
   return (
     <div className="cont">

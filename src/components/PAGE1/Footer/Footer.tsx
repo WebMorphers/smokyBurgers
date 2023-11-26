@@ -1,32 +1,41 @@
 import "./footer.css";
-import logo from "../../assets/logohd.png";
-import insta from "../../assets/instagram-svg.svg";
-import glovo from "../../assets/glovo-svg.svg";
-import tiktok from "../../assets/tiktok-svg.svg";
+import logo from "../../../assets/logohd.png";
+import insta from "../../../assets/instagram-svg.svg";
+import glovo from "../../../assets/glovo-svg.svg";
+import tiktok from "../../../assets/tiktok-svg.svg";
 
 const Footer = () => {
   return (
     <div>
       <div className="bg-black flex flex-col justify-center items-center p-10">
         <ul className="grid lg:grid-cols-6  grid-cols-2  max-lg:gap-8  text-white  ">
-          <a href="" className="hover:text-red-600">
+          {" "}
+          <li className="footer font-normal p-6">
+            <a href="" className="hover:text-red-600">
+              Menu
+            </a>
+          </li>
+          <li className="footer font-normal p-6">
             {" "}
-            <li className="footer font-normal">Menu</li>
-          </a>
-          <a href="" className="hover:text-red-600">
-            <li className="footer font-normal">About us</li>
-          </a>
-          <a href="" className="hover:text-red-600">
-            {" "}
-            <li className="footer font-normal">Order Now</li>
-          </a>
-          <a href="" className="hover:text-red-600">
-            <li className="footer font-normal">Location</li>
-          </a>
-          <a href="" className="hover:text-red-600">
-            {" "}
-            <li className="footer font-normal">Contact Us</li>
-          </a>
+            <a href="" className="hover:text-red-600">
+              About us
+            </a>
+          </li>{" "}
+          <li className="footer font-normal p-6">
+            <a href="" className="hover:text-red-600">
+              Order Now
+            </a>
+          </li>
+          <li className="footer font-normal p-6">
+            <a href="" className="hover:text-red-600">
+              Location
+            </a>
+          </li>{" "}
+          <li className="footer font-normal p-6">
+            <a href="" className="hover:text-red-600">
+              Contact Us
+            </a>
+          </li>
           <li className="flex justify-end max-lg:justify-center max-lg:items-center items-end  gap-3">
             <a
               href="https://www.instagram.com/smokyburgersmaroc/"
