@@ -1,4 +1,4 @@
-import logo from "../../assets/logohd.png";
+import logo from "../../../assets/logohd.png";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 

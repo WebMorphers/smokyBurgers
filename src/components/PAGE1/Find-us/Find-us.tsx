@@ -1,8 +1,8 @@
-import Map from "../mapContainer";
+import Map from "../../mapContainer";
 
-import location from "../../assets/location-svg.svg";
-import phone from "../../assets/phone-svg.svg";
-import time from "../../assets/time-svg.svg";
+import location from "../../../assets/location-svg.svg";
+import phone from "../../../assets/phone-svg.svg";
+import time from "../../../assets/time-svg.svg";
 
 import "./find-us.css";
 
