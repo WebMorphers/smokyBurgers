@@ -23,7 +23,10 @@ const Hero = () => {
       <h1 className=" title__hero text-9xl max-sm:text-8xl text-center">
         SMOKY BURGERS
       </h1>
-      <a href="/menu" className="bg-[#FE181A] text-white om text-xl p-2 px-3  border-gray-400 border rounded-2xl bottom-36 ">
+      <a
+        href="/menu"
+        className="bg-[#FE181A] text-white om text-xl p-2 px-3  border-gray-400 border rounded-2xl bottom-36 "
+      >
         Our menu
       </a>
     </div>
