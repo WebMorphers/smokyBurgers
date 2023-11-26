@@ -6,8 +6,8 @@ import tiktok from "../../../assets/tiktok-svg.svg";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="bg-black flex flex-col justify-center items-center p-10">
+    <div className="">
+      <div className="cont bg-black flex flex-col justify-center items-center text-center">
         <ul className="grid lg:grid-cols-6  grid-cols-2  max-lg:gap-8  text-white  ">
           {" "}
           <li className="footer font-normal p-6">

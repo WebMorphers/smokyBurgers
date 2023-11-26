@@ -1,5 +1,4 @@
 import classical from '../../../assets/classical-chicken.png'
-import classicalHolder from '../../../assets/classical-chicken-placehold.png'
 import avocado from '../../../assets/chicken-avocado.png'
 import secret from '../../../assets/secret-burger.png'
 import './Best-sells.css'
