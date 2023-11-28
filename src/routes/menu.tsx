@@ -1,21 +1,35 @@
 import Navbar from "../components/PAGE1/Navbar/navbar";
+import ouelmas from '../assets/ouelmes.png'
+import ciel from '../assets/ciel-eau-minerale.png'
+import oranginaZero from '../assets/orangina-zero.png'
+import orangina from '../assets/orangina.png'
+import SchweppesTonic from '../assets/Schweppes-Tonic.png'
+import SchweppesCitron from '../assets/Schweppes-Citron.png'
+import Poms from '../assets/poms-33cl.png'
+import Hawai from '../assets/Hawai-tropical.png'
+import Sprite from '../assets/Sprite.png'
+import CocaZero from '../assets/Coca-Cola-Zero.png'
+import Coca from '../assets/Coca-Cola.png'
+import Orange from '../assets/JusOrange.png'
+import Lemonade from '../assets/Mint-Lemonade.png'
+
 
 const items = [
     { 
       "name": "Chili Cheez Croquette",
       "categorie": "Entrées",
-      "Description": "Croustillantes, généreusement garnies de fromage fondant et rehaussées d'une saveur relevée. Le mariage parfait entre le piquant du chili et l'onctuosité du fromage en fait une expérience gourmande et savoureuse.",
+      "Description": "Croustillantes, généreusement garnies de fromage fondant et rehaussées d'une saveur relevée.",
       "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jpohs1y6jzqilexdx69y",
       "price": "42,00 MAD",
-      "link": " "
+      "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 "
     },
     { 
         "name": "Mozzarella Sticks",
         "categorie": "Entrées",
-        "Description": "Des bâtonnets de mozzarella fondante enrobés d'une fine couche de chapelure dorée, servis avec une sauce aux choix pour une expérience gourmande inoubliable. Parfait pour une collation ou en accompagnement.",
+        "Description": "Des bâtonnets de mozzarella fondante enrobés d'une fine couche de chapelure dorée, servis avec une sauce aux choix pour une expérience gourmande inoubliable.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/hu7sbz7idjnida5csfxv",
         "price": "42,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 "
       },
       { 
         "name": "Chicken Nuggets",
@@ -23,13 +37,29 @@ const items = [
         "Description": "100% filet de poulet, mariné et pané maison, dans notre mélange d’épices secret.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bn2tjtdsnfuadv6fbca7",
         "price": "38,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 "
       },
       { 
         "name": "Spicy Chicken Nuggets",
         "categorie": "Entrées",
         "Description": "Pour les amateurs de piquant, nos nuggets saupoudrés de notre mélange spicy.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bn2tjtdsnfuadv6fbca7",
+        "price": "38,00 MAD",
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 "
+      },
+      { 
+        "name": "Spicy Chicken Tender",
+        "categorie": "Entrées",
+        "Description": "Pour les amateurs de piquant, nos tenders saupoudrés de notre mélange spicy.",
+        "img": "https://images.deliveryhero.io/image/menus-glovo/products/5bfe5b57be06a958dce764743c52c322876d150cfd06c3a3a077d487e46d5d52?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+        "price": "38,00 MAD",
+        "link": " "
+      },
+      { 
+        "name": "Chicken Tenders",
+        "categorie": "Entrées",
+        "Description": "Aiguillettes de poulet marinées et panées maison, avec notre mélange d’épices secret.",
+        "img": "https://images.deliveryhero.io/image/menus-glovo/products/5bfe5b57be06a958dce764743c52c322876d150cfd06c3a3a077d487e46d5d52?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
         "price": "38,00 MAD",
         "link": " "
       },
@@ -39,7 +69,7 @@ const items = [
         "Description": "Potato bun, triple viande hachée fumée au bois de pommier (300 gr), triple cheddar fumé, oignon blanc, ketchup fumé, moutarde, cornichon, oignon frit",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/eewnjrrfzu4laazi7vr8",
         "price": "95,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090"
       },
       { 
         "name": "Double Baconator",
@@ -47,7 +77,7 @@ const items = [
         "Description": "Potato Bun, Double Bacon de Boeuf, Double viande hachée fumée au bois de pommiers (200gr), Double Cheddar, Oignon frit, Ketchup, Smoked Mayo.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/m0wdq5e1dy3yagy7j1kq",
         "price": "90,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090"
       },
       { 
         "name": "Secret Burger",
@@ -55,7 +85,7 @@ const items = [
         "Description": "Potato Bun, Double Viande hachée fumée au bois de pommier (200 gr), Double Cheddar fumé, Champignon de paris, Mayonnaise à la truffe, Oignon frit.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/llfeieqkmtsy8xrkzaqh",
         "price": "85,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Double Cheez Burger",
@@ -63,7 +93,7 @@ const items = [
         "Description": "Potato bun, double viande hachée fumée au bois de pommier (200 gr), double cheddar fumé, oignon blanc, ketchup fumé, moutarde, cornichon.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/qxnt7bjvor1ltbcxalsz",
         "price": "75,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Truffle Mushroom",
@@ -71,7 +101,7 @@ const items = [
         "Description": "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, champignons de paris, mayonnaise à la truffe.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/pofdwlszltkuhb4uqfnw",
         "price": "70,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Smoky BBQ",
@@ -79,7 +109,7 @@ const items = [
         "Description": "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, tomate, oignon rouge, oignon caramélisé, cornichon, salade iceberg, sauce bbq fumée",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/aiuwcnfsppeqnwpqyy01",
         "price": "65,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Spicy Beef",
@@ -87,7 +117,7 @@ const items = [
         "Description": "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, tomate, oignon rouge, oignon frit, pickles de piment, cornichon, salade iceberg, sauce spicy mayo",
         "img":"https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jljqr05wgsw1yqqjwztm",
         "price": "65,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Royal Cheez Burger",
@@ -95,7 +125,7 @@ const items = [
         "Description": "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, oignon blanc, cornichon, salade iceberg, oignon frit, tomate, Ketchup, Smoked Mayo.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/fg2chqmhzp7l45g7vgnk",
         "price": "60,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Cheez Burger",
@@ -103,7 +133,7 @@ const items = [
         "Description": "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, oignon blanc, Ketchup fumé, moutarde, cornichon",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/u5jh892wtv8k50t68ay9",
         "price": "50,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 "
       },
       { 
         "name": "Double Chicken Cheez ",
@@ -111,7 +141,7 @@ const items = [
         "Description": "Potato Bun, Double Filet de poulet pané (200gr), Double Cheddar fumé, oignon blanc, cornichon, Ketchup, Moutarde.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/omwzwz7vueyal3buutom",
         "price": "75,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Chicken Truffle Mushroom ",
@@ -119,7 +149,7 @@ const items = [
         "Description": "Potato bun, filet de poulet pané, Cheddar Fumé, Champignon de Paris sauté, Mayonnaise à la Truffe.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/oqd0dglbnijunqoepdgp",
         "price": "70,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Buffalo Smoky Bbq",
@@ -127,7 +157,7 @@ const items = [
         "Description": "Potato bun, filet de poulet pané, cheddar fumé, tomate, oignon rouge, oignon caramélisé, cornichon, salade iceberg, sauce BBQ fumé.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/oeedsi4kpbq7zqic2p9j",
         "price": "65,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Nashville Hot",
@@ -135,7 +165,7 @@ const items = [
         "Description": "Potato bun, filet de poulet pané, cheddar fumé, tomate, oignon rouge, oignon frit, pickles de piment, cornichon, salade iceberg, sauce spicy mayo",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/lymgytkuonr3tbes5lbn",
         "price": "65,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Chicken Cheez",
@@ -143,7 +173,7 @@ const items = [
         "Description": "Potato bun, filet de poulet pané, cheddar fumé, oignon blanc, ketchup fumé, moutarde, cornichon.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/wg4kwfusqaqe7epalekc",
         "price": "50,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Fire Chicken",
@@ -151,7 +181,7 @@ const items = [
         "Description": "Potato bun, filet de poulet pané, cheddar fumé, pickle de piment, Spicy Smoked Ketchup //!\\ Warning : For spicy lovers only //!\\",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/e4hl7gj1kv8wtwf1azmb",
         "price": "50,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Crispy Chicken",
@@ -159,15 +189,7 @@ const items = [
         "Description": "Potato bun, filet de poulet pané, Smoked Mayo, cornichon.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zkw82vkdbym0hngncfxi",
         "price": "45,00 MAD",
-        "link": " "
-      },
-      { 
-        "name": "Veggie Burger",
-        "categorie": "Burgers végétariens",
-        "Description": "Potato bun, Rösti de pommes de terre, cheddar fumé, oignon blanc, cornichon, salade iceberg, oignon frit, tomate, sauce Mayonnaise fumé",
-        "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/tpuh70qedcn159xhh31t",
-        "price": "58,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 "
       },
       { 
         "name": "Chicken Cheezy Fries",
@@ -175,7 +197,7 @@ const items = [
         "Description": "Nuggets de poulet, oignon frit, Frites, Homemade Cheezy Sauce au Cheddar fumé !",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/yd5gwssz28rypeji286c",
         "price": "45,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092 "
       },
       { 
         "name": "Jalapeños Cheezy Fries",
@@ -183,7 +205,7 @@ const items = [
         "Description": "Jalapeños , oignon frit, Frites, Homemade Cheezy Sauce au Cheddar fumé !",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ikioksqb3zjf9gxdxbkp",
         "price": "40,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092 "
       },
       { 
         "name": "Cheezy Fries",
@@ -191,7 +213,7 @@ const items = [
         "Description": "Frites maison ",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/cd4q8dqb8g6f3bdrpor7",
         "price": "35,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092"
       },
       { 
         "name": "Fries",
@@ -199,7 +221,7 @@ const items = [
         "Description": "Frites maison ",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/gayyhqpwowsrswwgdqin",
         "price": "20,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092"
       },
       { 
         "name": "Sauce Cheez",
@@ -207,7 +229,7 @@ const items = [
         "Description": "Découvrez notre irrésistible sauce cheese faite à partir de véritable cheddar, sans additifs ni colorants artificiels. Une expérience gustative naturelle et savoureuse à savourer sans modération. ",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/f57pt1ws6m1cztes1vdg",
         "price": "10,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035"
       },
       { 
         "name": "Smoked Ketchup",
@@ -215,7 +237,7 @@ const items = [
         "Description": "Plongez dans une explosion de saveurs avec notre sauce ketchup fumé. Son goût intense et fumé apportera une touche de caractère à tous vos plats préférés, pour une expérience culinaire inoubliable.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/wimn92awu33rpqv6zkyx",
         "price": "5,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035"
       },
       { 
         "name": "Smoked BBQ",
@@ -223,7 +245,7 @@ const items = [
         "Description": "Plongez dans une symphonie de saveurs avec notre sauce BBQ fumée, un mélange équilibré de fumée et d'épices qui ravira vos papilles. Une explosion de goût authentique qui apportera une touche irrésistible à tous vos plats grillés.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/srgmalg1jmn4ckehd4w3",
         "price": "5,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
       },
       { 
         "name": "Smoked Mayo",
@@ -231,7 +253,7 @@ const items = [
         "Description": "Succombez à notre mayonnaise fumée faite maison, sans conservateurs. Une saveur unique et naturelle qui relèvera tous vos plats.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mmx9ulrcdgvv95i4veml",
         "price": "5,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
       },
       { 
         "name": "Mayonnaise à la Truffe ",
@@ -239,7 +261,7 @@ const items = [
         "Description": "Notre mayonnaise à la truffe noire est une création faite maison, préparée avec des brisures de truffe noire pour une saveur intense et raffinée. Parfaite pour accompagner vos plats préférés et sublimer leur goût avec une touche d'élégance truffée.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w1jpecbezfoaqdogksxu",
         "price": "5,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
       },
       { 
         "name": "Spicy Mayo ",
@@ -247,7 +269,7 @@ const items = [
         "Description": "Notre Spicy Mayo est une mayonnaise maison épicée, confectionnée à partir d'un mélange d'épices marocaines authentiques. La saveur intense et piquante de cette sauce rehaussera à coup sûr le goût de vos plats préférés.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/slpzpmmgvpdvbuoco7cw",
         "price": "5,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
       },
       { 
         "name": "Lucifer 4.000.000 scoville ",
@@ -255,7 +277,7 @@ const items = [
         "Description": "Attention vraiment vraiment spicy... Ne pas toucher les yeux, ne pas laisser à porter des enfants.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xjajeyei15j6gfxebpno",
         "price": "10,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
       },
       { 
         "name": "Fondant au Chocolat Noir",
@@ -263,7 +285,7 @@ const items = [
         "Description": "Avec sa croûte croustillante et son cœur coulant, ce fondant est un véritable délice pour les papilles. Laissez-vous tenter et régalez-vous avec cette gourmandise irrésistible !",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mwoavawweurytknnphz9",
         "price": "40,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=desserts-c.766739089 "
       },
       { 
         "name": "Classic Milk Chocolate Chip Cookies ",
@@ -271,111 +293,111 @@ const items = [
         "Description": "Vous en rêviez, on l'a fait : un délicieux cookie au chocolat au lait ( Weiss ). Attention, c'est addictif ! (Poids du Cookie : Environ 90g - CONTIENT DU GLUTEN)",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/guks0abcuiksbobaiupa",
         "price": "25,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=desserts-c.766739089 "
       },
-      { 
-        "name": "Mint Lemonade",
-        "categorie": "Boissons & Jus",
-        "Description": "Menthe, citrons jaune et vert, eau",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vt1x0p2pmdw7olywafqr',
-        "price": "30,00 MAD",
-        "link": " "
-      },
-      { 
-        "name": "Jus D'orange",
-        "categorie": "Boissons & Jus",
-        "Description": "100 % pur jus d'orange",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/f1huiexyzsjkb85c481a',
-        "price": "25,00 MAD",
-        "link": " "
-      },
+      {
+      "name": "Mint Lemonade",
+      "categorie": "Boissons & Jus",
+      "Description": "Menthe, citrons jaune et vert, eau",
+      "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vt1x0p2pmdw7olywafqr',
+      "price": "30,00 MAD",
+      "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
+    },
+    { 
+      "name": "Jus D'orange",
+      "categorie": "Boissons & Jus",
+      "Description": "100 % pur jus d'orange",
+      "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/f1huiexyzsjkb85c481a',
+      "price": "25,00 MAD",
+      "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
+    },
       { 
         "name": "Coca-Cola",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vriavt1bb5eyk1ml9hvw',
+        "img": Coca,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Coca-Cola Zéro",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vavvt7c3p7bqjzcsavv7',
+        "img": CocaZero,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Sprite",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/p68co6jycb7fdujccz0l',
+        "img": Sprite,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Hawaï",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ma0umck5fdaaijzqa71a',
+        "img": Hawai,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Pom's",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xnntmktqwxctzbfyyhxa',
+        "img": Poms,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Schweppes Citron",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vey5qmzl7cl6657dcrjj',
+        "img": SchweppesCitron,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Schweppes Tonic",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/h1dtyporl6tuxbitvfk1',
+        "img": SchweppesTonic,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Orangina",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/nngfs7fl9vzrldpekcqo',
+        "img": orangina,
         "price": "20,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088"
       },
       { 
         "name": "Orangina Light",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/dk7chx8vijrvfufhy1yd',
+        "img": oranginaZero,
         "price": "20,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Eau minérale",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mkfhwvutqme0rhexa5x0',
+        "img": ciel,
         "price": "17,00 MAD",
-        "link": " "
+        "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 "
       },
       { 
         "name": "Eau gazeuse",
         "categorie": "Boissons & Jus",
         "Description": " ",
-        "img": 'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/sexr19wxrpkwifpodjnh',
+        "img": ouelmas,
         "price": "17,00 MAD",
-        "link": " "
+        "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088"
       }, 
     
     ];
@@ -384,15 +406,23 @@ const menu = () => {
   return (
     <>
 
-    <div className="grid grid-cols-4">
+    <div className="cont">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
     {items.map((item) => (
-        <div className="flex flex-col justify-center items-center">
-            <p>{item.name}</p>
-            <img src={item.img} alt={item.name} />
-            <p>{item.Description}</p>
-            <p>{item.price}</p>
-            </div>
-      ))}
+      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="w-full flex justify-center items-center">
+          <img className="h-72 w-full object-cover rounded-t-lg" src={item.img} alt={item.name} />
+        </div>
+        <div className="p-5 flex flex-col justify-between ">
+          <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</p>
+          
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{item.Description}</p>
+          <p className="text-2xl font-bold text-gray-900 dark:text-white">{item.price}</p>
+        </div>
+      </div>
+    ))}      
+      </div>
     </div>
 <Navbar />
 
