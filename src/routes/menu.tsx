@@ -420,7 +420,7 @@ const menu = () => {
           <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</p>
           
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 pb-6">{item.Description}</p>
-          <p className="text-2xl font-bold text-gray-900 dark:text-white absolute bottom-5 right-[37%]  ">{item.price}</p>
+          <p className="text-2xl font-bold text-gray-900 dark:text-white absolute bottom-5 right-0 left-0 m-auto text-center">{item.price}</p>
         </div>
         </a>
       </div>
