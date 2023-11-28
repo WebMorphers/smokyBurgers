@@ -9,7 +9,7 @@ import Hawai from "../assets/Hawai-tropical.png";
 import Sprite from "../assets/Sprite.png";
 import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const items = [
   {
@@ -439,36 +439,15 @@ const menu = () => {
 
   return (
     <>
-      <div className="cont">
-        <div className="categories m-7 flex justify-between ">
-          <button
-            className={
-              selectedCategory == "All"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
-                : " hover:scale-105 hover:text-red-600"
-            }
-            onClick={() => setSelectedCategory("All")}
-          >
-            All
-          </button>
-          <button
-            className={
-              selectedCategory == "Entrées"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
-                : "hover:scale-105 hover:text-red-600"
-            }
-            onClick={() => setSelectedCategory("Entrées")}
-          >
-            Entrées
-          </button>
-          <button
-            className={
-              selectedCategory == "Burgers beef"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
-                : "hover:scale-105 hover:text-red-600"
-            }
-            onClick={() => setSelectedCategory("Burgers beef")}
-          >
+    <div className="bg-gray-700">
+    <Navbar />
+    </div>
+    
+    <div className="cont">
+      <div className="categories m-7 flex justify-between ">
+          <button className={selectedCategory=='All'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': ' hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("All")}>All</button>
+          <button className={selectedCategory=='Entrées'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
+          <button className={selectedCategory=='Burgers beef'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Burgers beef")}>
             Burgers beef
           </button>
           <button
@@ -551,6 +530,7 @@ const menu = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
