@@ -411,7 +411,7 @@ const menu = () => {
 
     {items.map((item) => (
       
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative ">
+      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
         <a target="_blank" href={item.link}>
         <div className="w-full flex justify-center items-center">
           <img className="h-72 w-full object-cover object-center rounded-t-lg" src={item.img} alt={item.name} />
@@ -419,7 +419,7 @@ const menu = () => {
         <div className="p-5 flex flex-col justify-between ">
           <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</p>
           
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 pb-6 hidden sm:block">{item.Description}</p>
+          <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">{item.Description}</p>
           <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">{item.price}</p>
         </div>
         </a>
