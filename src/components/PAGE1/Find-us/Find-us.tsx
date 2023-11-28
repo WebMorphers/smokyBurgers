@@ -8,11 +8,11 @@ import "./find-us.css";
 
 const FindUs = () => {
   return (
-    <div className="cont flex justify-center items-center font-semibold">
+    <div id="Find" className="cont flex justify-center items-center font-semibold">
       <div className="">
         <h1 className="title text-5xl text-center mb-8">Find US</h1>
         <div className="flex max-md:flex-col gap-12 ">
-          <div className="border-4 border-[#FF6565]">
+          <div className="border-4 border-red-600">
             <Map />
           </div>
           <div className="flex flex-col md:py-11 gap-4 xl:justify-center xl:gap-9  justify-between items-start">

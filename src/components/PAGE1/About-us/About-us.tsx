@@ -14,7 +14,7 @@ import vid12 from "../../../assets/vid-toto.mp4";
 
 const AboutUs = () => {
   return (
-    <div className="cont">
+    <div id="videos"  className="cont">
       <div className=" flex flex-col justify-center items-center gap-5">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl title text-center">
           Taste Like Never Before .

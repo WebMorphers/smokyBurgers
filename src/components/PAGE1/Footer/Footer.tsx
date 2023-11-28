@@ -9,31 +9,26 @@ const Footer = () => {
     <div className="">
       <div className="cont bg-black flex flex-col justify-center items-center text-center">
         <ul className="grid lg:grid-cols-6  grid-cols-2  max-lg:gap-8  text-white  ">
+        <li className="footer font-normal p-6">
+            {" "}
+            <a href="#favorites" className="hover:text-red-600">
+              Favorites
+            </a>
+          </li>
           {" "}
           <li className="footer font-normal p-6">
-            <a href="" className="hover:text-red-600">
+            <a href="#videos" className="hover:text-red-600">
+              Videos
+            </a>
+          </li>
+          <li className="footer font-normal p-6">
+            <a href="#Find" className="hover:text-red-600">
+              Find Us
+            </a>
+          </li>{" "}
+          <li className="footer font-normal p-6">
+            <a href="/menu" className="hover:text-red-600">
               Menu
-            </a>
-          </li>
-          <li className="footer font-normal p-6">
-            {" "}
-            <a href="" className="hover:text-red-600">
-              About us
-            </a>
-          </li>{" "}
-          <li className="footer font-normal p-6">
-            <a href="" className="hover:text-red-600">
-              Order Now
-            </a>
-          </li>
-          <li className="footer font-normal p-6">
-            <a href="" className="hover:text-red-600">
-              Location
-            </a>
-          </li>{" "}
-          <li className="footer font-normal p-6">
-            <a href="" className="hover:text-red-600">
-              Contact Us
             </a>
           </li>
           <li className="flex justify-end max-lg:justify-center max-lg:items-center items-end  gap-3">
@@ -59,7 +54,7 @@ const Footer = () => {
         <div className="flex flex-row justify-center items-center gap-12 text-white  ">
           <p>
             ©2023{" "}
-            <a href="" className="text-amber-600 hover:text-orange-500">
+            <a href="https://www.webmorphers.org" target="_blanck" className=" hover:text-red-600">
               WEBMORPHERS
             </a>{" "}
             . All rights reserved.

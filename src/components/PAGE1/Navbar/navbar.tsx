@@ -41,32 +41,34 @@ const Navbar = () => {
       </a>
       <ul className="hidden md:flex">
         <li className="p-4">
+          <a href="#favorites" className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600">
+            Favorites
+          </a>
+        </li>
+        <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            href="/"
+            href="#videos"
           >
-            About us
+            Videos
+          </a>
+        </li>
+        <li className="p-4">
+          <a href="#Find" className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600">
+            Find us
           </a>
         </li>
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
             onClick={() => scrollToSection("projects")}
-            href="#about"
+            href="/menu"
           >
             Menu
           </a>
         </li>
-        <li className="p-4">
-          <a className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600">
-            Favorites
-          </a>
-        </li>
-        <li className="p-4">
-          <a className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600">
-            Find us
-          </a>
-        </li>
+        
+        
       </ul>
       <div></div>
 
