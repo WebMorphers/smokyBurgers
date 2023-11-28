@@ -12,7 +12,7 @@ import Coca from "../assets/Coca-Cola.png";
 import Navbar from "../components/PAGE1/Navbar/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
 
-import React, { useState } from "react";
+import   { useState } from "react";
 
 const items = [
   {
