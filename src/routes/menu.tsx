@@ -442,30 +442,28 @@ const menu = () => {
     <>
 
     <div className="cont">
-      
-      
       <div className="categories flex flex-row gap-10">
-        <button onClick={() => setSelectedCategory("All")}>All</button>
-        <button onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
-        <button onClick={() => setSelectedCategory("Burgers beef")}>
-          Burgers beef
-        </button>
-        <button onClick={() => setSelectedCategory("Burgers chiken")}>
-          Burgers chiken
-        </button>
-        <button onClick={() => setSelectedCategory("Frites")}>Frites</button>
-        <button onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
-        <button onClick={() => setSelectedCategory("Desserts")}>
-          Desserts
-        </button>
-        <button onClick={() => setSelectedCategory("Boissons & Jus")}>
-          Boissons & Jus
-        </button>
-        {/* Add more category buttons as needed */}
-      </div>
+          <button onClick={() => setSelectedCategory("All")}>All</button>
+          <button onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
+          <button onClick={() => setSelectedCategory("Burgers beef")}>
+            Burgers beef
+          </button>
+          <button onClick={() => setSelectedCategory("Burgers chiken")}>
+            Burgers chiken
+          </button>
+          <button onClick={() => setSelectedCategory("Frites")}>Frites</button>
+          <button onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
+          <button onClick={() => setSelectedCategory("Desserts")}>
+            Desserts
+          </button>
+          <button onClick={() => setSelectedCategory("Boissons & Jus")}>
+            Boissons & Jus
+          </button>
+          {/* Add more category buttons as needed */}
+        </div>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
 
-      {items.map((item) => (
+      {filteredItems.map((item) => (
       
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
         <a target="_blank" href={item.link}>
