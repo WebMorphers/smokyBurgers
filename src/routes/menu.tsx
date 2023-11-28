@@ -225,7 +225,7 @@ const items = [
       { 
         "name": "Sauce Cheez",
         "categorie": "Sauce",
-        "Description": "Découvrez notre irrésistible sauce cheese faite à partir de véritable cheddar, sans additifs ni colorants artificiels. Une expérience gustative naturelle et savoureuse à savourer sans modération. ",
+        "Description": "Découvrez notre irrésistible sauce cheese faite à partir de véritable cheddar, sans additifs ni colorants artificiels.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/f57pt1ws6m1cztes1vdg",
         "price": "10,00 MAD",
         "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035"
@@ -233,7 +233,7 @@ const items = [
       { 
         "name": "Smoked Ketchup",
         "categorie": "Sauce",
-        "Description": "Plongez dans une explosion de saveurs avec notre sauce ketchup fumé. Son goût intense et fumé apportera une touche de caractère à tous vos plats préférés, pour une expérience culinaire inoubliable.",
+        "Description": "Plongez dans une explosion de saveurs avec notre sauce ketchup fumé. Son goût intense et fumé apportera une touche de caractère à tous vos plats préférés.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/wimn92awu33rpqv6zkyx",
         "price": "5,00 MAD",
         "link": " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035"
@@ -241,7 +241,7 @@ const items = [
       { 
         "name": "Smoked BBQ",
         "categorie": "Sauce",
-        "Description": "Plongez dans une symphonie de saveurs avec notre sauce BBQ fumée, un mélange équilibré de fumée et d'épices qui ravira vos papilles. Une explosion de goût authentique qui apportera une touche irrésistible à tous vos plats grillés.",
+        "Description": "Plongez dans une symphonie de saveurs avec notre sauce BBQ fumée, un mélange équilibré de fumée et d'épices qui ravira vos papilles.",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/srgmalg1jmn4ckehd4w3",
         "price": "5,00 MAD",
         "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
@@ -257,7 +257,7 @@ const items = [
       { 
         "name": "Mayonnaise à la Truffe ",
         "categorie": "Sauce",
-        "Description": "Notre mayonnaise à la truffe noire est une création faite maison, préparée avec des brisures de truffe noire pour une saveur intense et raffinée. Parfaite pour accompagner vos plats préférés et sublimer leur goût avec une touche d'élégance truffée.",
+        "Description": "Notre mayonnaise à la truffe noire est une création faite maison, préparée avec des brisures de truffe noire pour une saveur intense et raffinée. ",
         "img": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w1jpecbezfoaqdogksxu",
         "price": "5,00 MAD",
         "link": "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 "
