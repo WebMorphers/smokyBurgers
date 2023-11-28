@@ -442,21 +442,21 @@ const menu = () => {
     <>
 
     <div className="cont">
-      <div className="categories flex flex-row gap-10">
-          <button onClick={() => setSelectedCategory("All")}>All</button>
-          <button onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
-          <button onClick={() => setSelectedCategory("Burgers beef")}>
+      <div className="categories m-4 flex flex-row gap-10">
+          <button className={selectedCategory=='All'? 'underline': ''} onClick={() => setSelectedCategory("All")}>All</button>
+          <button className={selectedCategory=='Entrées'? 'underline': ''} onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
+          <button className={selectedCategory=='Burgers beef'? 'underline': ''} onClick={() => setSelectedCategory("Burgers beef")}>
             Burgers beef
           </button>
-          <button onClick={() => setSelectedCategory("Burgers chiken")}>
+          <button className={selectedCategory=='Burgers chiken'? 'underline': ''} onClick={() => setSelectedCategory("Burgers chiken")}>
             Burgers chiken
           </button>
-          <button onClick={() => setSelectedCategory("Frites")}>Frites</button>
-          <button onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
-          <button onClick={() => setSelectedCategory("Desserts")}>
+          <button className={selectedCategory=='Frites'? 'underline': ''} onClick={() => setSelectedCategory("Frites")}>Frites</button>
+          <button className={selectedCategory=='Sauce'? 'underline': ''} onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
+          <button className={selectedCategory=='Desserts'? 'underline': ''} onClick={() => setSelectedCategory("Desserts")}>
             Desserts
           </button>
-          <button onClick={() => setSelectedCategory("Boissons & Jus")}>
+          <button className={selectedCategory=='Boissons & Jus'? 'underline': ''} onClick={() => setSelectedCategory("Boissons & Jus")}>
             Boissons & Jus
           </button>
           {/* Add more category buttons as needed */}
