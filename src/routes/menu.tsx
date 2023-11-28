@@ -443,20 +443,20 @@ const menu = () => {
 
     <div className="cont">
       <div className="categories m-7 flex justify-between ">
-          <button className={selectedCategory=='All'? 'text-red-600 text-lg font-medium ': ''} onClick={() => setSelectedCategory("All")}>All</button>
-          <button className={selectedCategory=='Entrées'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
-          <button className={selectedCategory=='Burgers beef'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Burgers beef")}>
+          <button className={selectedCategory=='All'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("All")}>All</button>
+          <button className={selectedCategory=='Entrées'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
+          <button className={selectedCategory=='Burgers beef'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Burgers beef")}>
             Burgers beef
           </button>
-          <button className={selectedCategory=='Burgers chiken'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Burgers chiken")}>
+          <button className={selectedCategory=='Burgers chiken'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Burgers chiken")}>
             Burgers chiken
           </button>
-          <button className={selectedCategory=='Frites'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Frites")}>Frites</button>
-          <button className={selectedCategory=='Sauce'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
-          <button className={selectedCategory=='Desserts'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Desserts")}>
+          <button className={selectedCategory=='Frites'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Frites")}>Frites</button>
+          <button className={selectedCategory=='Sauce'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
+          <button className={selectedCategory=='Desserts'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Desserts")}>
             Desserts
           </button>
-          <button className={selectedCategory=='Boissons & Jus'? 'text-red-600 text-lg font-medium': ''} onClick={() => setSelectedCategory("Boissons & Jus")}>
+          <button className={selectedCategory=='Boissons & Jus'? 'text-red-600 text-lg font-medium p-2 border-b-red-600 border-b-4': ''} onClick={() => setSelectedCategory("Boissons & Jus")}>
             Boissons & Jus
           </button>
           {/* Add more category buttons as needed */}
