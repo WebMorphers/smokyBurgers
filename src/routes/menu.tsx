@@ -10,8 +10,7 @@ import Hawai from '../assets/Hawai-tropical.png'
 import Sprite from '../assets/Sprite.png'
 import CocaZero from '../assets/Coca-Cola-Zero.png'
 import Coca from '../assets/Coca-Cola.png'
-import Orange from '../assets/JusOrange.png'
-import Lemonade from '../assets/Mint-Lemonade.png'
+
 
 
 const items = [
@@ -412,7 +411,7 @@ const menu = () => {
     {items.map((item) => (
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div className="w-full flex justify-center items-center">
-          <img className="h-72 w-full object-cover rounded-t-lg" src={item.img} alt={item.name} />
+          <img className="h-72 w-full object-cover object-top rounded-t-lg" src={item.img} alt={item.name} />
         </div>
         <div className="p-5 flex flex-col justify-between ">
           <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</p>
