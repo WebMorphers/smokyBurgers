@@ -1,4 +1,3 @@
-import Navbar from "../components/PAGE1/Navbar/navbar";
 import ouelmas from "../assets/ouelmes.png";
 import ciel from "../assets/ciel-eau-minerale.png";
 import oranginaZero from "../assets/orangina-zero.png";
@@ -10,7 +9,7 @@ import Hawai from "../assets/Hawai-tropical.png";
 import Sprite from "../assets/Sprite.png";
 import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const items = [
   {
@@ -440,43 +439,114 @@ const menu = () => {
 
   return (
     <>
-
-    <div className="cont">
-      <div className="categories m-7 flex justify-between ">
-          <button className={selectedCategory=='All'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': ' hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("All")}>All</button>
-          <button className={selectedCategory=='Entrées'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Entrées")}>Entrées</button>
-          <button className={selectedCategory=='Burgers beef'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Burgers beef")}>
+      <div className="cont">
+        <div className="categories m-7 flex justify-between ">
+          <button
+            className={
+              selectedCategory == "All"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : " hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("All")}
+          >
+            All
+          </button>
+          <button
+            className={
+              selectedCategory == "Entrées"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Entrées")}
+          >
+            Entrées
+          </button>
+          <button
+            className={
+              selectedCategory == "Burgers beef"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Burgers beef")}
+          >
             Burgers beef
           </button>
-          <button className={selectedCategory=='Burgers chiken'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Burgers chiken")}>
+          <button
+            className={
+              selectedCategory == "Burgers chiken"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Burgers chiken")}
+          >
             Burgers chiken
           </button>
-          <button className={selectedCategory=='Frites'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Frites")}>Frites</button>
-          <button className={selectedCategory=='Sauce'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Sauce")}>Sauce</button>
-          <button className={selectedCategory=='Desserts'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Desserts")}>
+          <button
+            className={
+              selectedCategory == "Frites"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Frites")}
+          >
+            Frites
+          </button>
+          <button
+            className={
+              selectedCategory == "Sauce"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Sauce")}
+          >
+            Sauce
+          </button>
+          <button
+            className={
+              selectedCategory == "Desserts"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Desserts")}
+          >
             Desserts
           </button>
-          <button className={selectedCategory=='Boissons & Jus'? 'text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4': 'hover:scale-105 hover:text-red-600'} onClick={() => setSelectedCategory("Boissons & Jus")}>
+          <button
+            className={
+              selectedCategory == "Boissons & Jus"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                : "hover:scale-105 hover:text-red-600"
+            }
+            onClick={() => setSelectedCategory("Boissons & Jus")}
+          >
             Boissons & Jus
           </button>
           {/* Add more category buttons as needed */}
         </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
+          {filteredItems.map((item) => (
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
+              <a target="_blank" href={item.link}>
+                <div className="w-full flex justify-center items-center">
+                  <img
+                    className="h-72 w-full object-cover object-center rounded-t-lg"
+                    src={item.img}
+                    alt={item.name}
+                  />
+                </div>
+                <div className="p-5 flex flex-col justify-between ">
+                  <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {item.name}
+                  </p>
 
-      {filteredItems.map((item) => (
-      
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
-        <a target="_blank" href={item.link}>
-        <div className="w-full flex justify-center items-center">
-          <img className="h-72 w-full object-cover object-center rounded-t-lg" src={item.img} alt={item.name} />
-        </div>
-        <div className="p-5 flex flex-col justify-between ">
-          <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</p>
-          
-          <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">{item.Description}</p>
-          <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">{item.price}</p>
-        </div>
-        </a>
+                  <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">
+                    {item.Description}
+                  </p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">
+                    {item.price}
+                  </p>
+                </div>
+              </a>
             </div>
           ))}
         </div>

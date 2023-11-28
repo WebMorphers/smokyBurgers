@@ -2,8 +2,7 @@ import Navbar from "../Navbar/navbar";
 import img from "../../../assets/imaagehero.png";
 
 import "./hero.css";
-import { Link } from "react-router-dom";
-
+ 
 const Hero = () => {
   const heroStyle = {
     backgroundImage: `url(${img})`,
