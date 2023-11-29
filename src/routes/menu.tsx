@@ -14,7 +14,8 @@ import Footer from "../components/PAGE1/Footer/Footer";
 import { useInView } from 'react-intersection-observer'; 
 import { motion } from 'framer-motion';
 
-import   { useState } from "react";
+
+import   { useState ,useEffect } from "react";
 
 const items = [
   {
@@ -435,20 +436,26 @@ const items = [
   },
 ];
 const menu = () => {
+
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredItems =
     selectedCategory === "All"
       ? items
       : items.filter((item) => item.categorie === selectedCategory);
+
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   const iconVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+  useEffect(() => {
+      
+  }, [selectedCategory]);
+
   return (
     <>
       <div className="bg-gray-700">

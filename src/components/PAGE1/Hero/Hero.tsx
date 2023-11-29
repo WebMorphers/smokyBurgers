@@ -23,13 +23,7 @@ const Hero = () => {
   };
 
   return (
-    <motion.div
-    ref={ref}
-    initial="hidden"
-    animate={inView ? "visible" : "hidden"}
-    variants={iconVariants}
-    transition={{ duration: 0.5 }}
-   >
+    
     <div
       className="hero w-full z-0 flex flex-col justify-end pb-20 gap-12 items-center bg-[#160808]"
       style={heroStyle}
@@ -46,7 +40,7 @@ const Hero = () => {
         Our menu
       </a>
     </div>
-    </motion.div>
+    
   );
 };
 
