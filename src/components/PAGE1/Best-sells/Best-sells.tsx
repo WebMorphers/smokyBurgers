@@ -27,8 +27,9 @@ const BestSells = () => {
     animate={inView ? "visible" : "hidden"}
     variants={iconVariants}
     transition={{ duration: 0.5 }}
+    id='favorites'
    >
-    <div id='favorites' className="cont flex flex-col gap-8">
+    <div className="cont flex flex-col gap-8">
         <div className="text-black text-3xl sm:text-5xl title font-semibold text-center">
           <h1>Our Best Sells Of All Time !</h1>
         </div>
