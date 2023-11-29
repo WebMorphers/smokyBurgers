@@ -9,7 +9,7 @@ import Hawai from "../assets/Hawai-tropical.png";
 import Sprite from "../assets/Sprite.png";
 import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
-import Navbar from "../components/PAGE1/Navbar/navbar";
+import Navbar from "../components/PAGE2/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
 import { useInView } from 'react-intersection-observer'; 
 import { motion, AnimatePresence } from 'framer-motion';

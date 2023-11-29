@@ -1,11 +1,14 @@
-import logo from "../../../assets/logohd.png";
+import logo from "../../assets/logohd.png";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
-import "./navbar.css";
+import "../PAGE1/Navbar/navbar.css";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
+  const navigate = useNavigate();
+
   function chang() {
     setnav(!nav);
   }
@@ -30,47 +33,59 @@ const Navbar = () => {
       });
     });
   }, []);
+  const navigateAndScrollToSection = (sectionId: string) => {
+    if (window.location.pathname === "/menu") {
+      navigate("/");
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 500); // Adjust the delay as needed
+    } else {
+      scrollToSection(sectionId);
+    }
+  };
 
   return (
     <div
       id="nav"
-      className="flex  w-full absolute top-0  justify-between items-center h-24 mx-auto px-10 z-10 text-white"
+      className="flex  w-full absolute top-0  justify-between items-center h-24 mx-auto px-10 z-10 text-white bg-gray-900"
     >
       <a href="/">
         <img className="h-20 w-23" src={logo} />
       </a>
       <ul className="hidden md:flex">
         <li className="p-4">
-          <a href="#favorites" className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600">
+          <a
+            onClick={() => navigateAndScrollToSection("Favorites")}
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600"
+          >
             Favorites
           </a>
         </li>
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            href="#videos"
+            onClick={() => navigateAndScrollToSection("videos")}
           >
             Videos
           </a>
         </li>
         <li className="p-4">
-          <a onClick={() => {
-              scrollToSection("Find") 
-            }} className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600">
+          <a
+            onClick={() => navigateAndScrollToSection("Find")}
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600"
+          >
             Find us
           </a>
         </li>
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            
+            onClick={() => scrollToSection("projects")}
             href="/menu"
           >
             Menu
           </a>
         </li>
-        
-        
       </ul>
       <div></div>
 
@@ -93,7 +108,7 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col justify-center items-center">
-          <a href="/" onClick={() => scrollToSection("hello")}>
+          <a href="/">
             <img className="h-20 w-23" src={logo} alt="" />
           </a>
           <div className="absolute top-0 object-top z-0"></div>
@@ -101,11 +116,11 @@ const Navbar = () => {
             <a
               className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
               onClick={() => {
-                scrollToSection("projects"), chang();
+                navigateAndScrollToSection("Favorites"), chang();
               }}
               href="/"
             >
-              ACCUEIL
+              Favorites
             </a>
           </li>
           <li className="p-4">
@@ -113,20 +128,29 @@ const Navbar = () => {
             <a
               className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
               onClick={() => {
-                scrollToSection("projects"), chang();
+                navigateAndScrollToSection("videos"), chang();
               }}
               href="#about"
             >
-              A PROPOS
+              Videos
             </a>
           </li>
           <li className="p-4">
             <a
               className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              onClick={() => scrollToSection("projects")}
               href="/menu"
             >
               MENU
+            </a>
+          </li>
+          <li className="p-4">
+            <a
+              onClick={() => {
+                navigateAndScrollToSection("Find"), chang();
+              }}
+              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
+            >
+              Find us
             </a>
           </li>
         </ul>

@@ -24,6 +24,7 @@ const FindUs = () => {
           animate={inView ? "visible" : "hidden"}
           variants={iconVariants}
           transition={{ duration: 0.5 }}
+          id="Find"
          > 
     <div id="Find" className="cont flex justify-center items-center font-semibold">
       <div className="">
