@@ -2,8 +2,7 @@ import Navbar from "../Navbar/navbar";
 import img from "../../../assets/imaagehero.png";
 
 import "./hero.css";
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+ 
  
 const Hero = () => {
   const heroStyle = {
@@ -13,14 +12,7 @@ const Hero = () => {
     height: "100vh",
     width: "100%",
   };
-  const [ref, inView] = useInView({
-    triggerOnce: false,  
-  });
-
-  const iconVariants = {
-    hidden: { opacity: 0, y:  80 },
-    visible: { opacity: 1, y: 0 },
-  };
+   
 
   return (
     
