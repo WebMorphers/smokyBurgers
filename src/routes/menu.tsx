@@ -447,7 +447,7 @@ const menu = () => {
       </div>
 
       <div className="cont">
-        <div className="categories m-7 flex justify-between ">
+        <div className="categories m-7 pt-12 flex justify-between ">
           <button
             className={
               selectedCategory == "All"
