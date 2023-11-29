@@ -12,6 +12,9 @@ import Coca from "../assets/Coca-Cola.png";
 import Navbar from "../components/PAGE2/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import   { useState } from "react";
 
 const items = [
@@ -442,7 +445,7 @@ const menu = () => {
 
   return (
     <>
-      <div className="bg-gray-700">
+      <div className="bg-[#160808]">
         <Navbar />
       </div>
 
@@ -535,10 +538,11 @@ const menu = () => {
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
               <a target="_blank" href={item.link}>
                 <div className="w-full flex justify-center items-center">
-                  <img
+                  <LazyLoadImage
                     className="h-72 w-full object-cover object-center rounded-t-lg"
                     src={item.img}
                     alt={item.name}
+                    effect="blur"
                   />
                 </div>
                 <div className="p-5 flex flex-col justify-between ">

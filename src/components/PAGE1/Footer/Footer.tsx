@@ -8,16 +8,16 @@ const Footer = () => {
   return (
     
     <div className="bg-black text-white">
-      <div className="cont">
+      <div className="md:px-24 py-10 px-7 w-full">
         <div className="flex flex-col gap-5 ">
-          <div className="flex justify-between flex-wrap-reverse max-sm:justify-center items-center">
+          <div className="flex justify-between flex-wrap-reverse max-sm:justify-center">
             <div className="grid max-sm:grid-cols-2 grid-cols-4 w-[70%] gap-y-3">
                 <a href="#favorites" className="hover:text-red-600 flex justify-center items-center ">Favorites</a>
                 <a href="#videos" className="hover:text-red-600 flex justify-center items-center ">Videos</a>
                 <a href="#Find" className="hover:text-red-600 flex justify-center items-center ">Find Us</a>
                 <a href="/menu" className="hover:text-red-600 flex justify-center items-center ">Menu</a>
             </div>
-            <div className="flex items-end">
+            <div className="flex items-end justify-end">
             <a
                 href="https://www.instagram.com/smokyburgersmaroc/"
                 target="-blank"
