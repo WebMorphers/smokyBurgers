@@ -3,7 +3,6 @@ import img from "../../../assets/imaagehero.png";
 
 import "./hero.css";
  
- 
 const Hero = () => {
   const heroStyle = {
     backgroundImage: `url(${img})`,
@@ -12,7 +11,6 @@ const Hero = () => {
     height: "100vh",
     width: "100%",
   };
-   
 
   return (
     

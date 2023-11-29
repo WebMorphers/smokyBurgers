@@ -11,15 +11,11 @@ import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
 import Navbar from "../components/PAGE2/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
-import { useInView } from 'react-intersection-observer'; 
-import { motion, AnimatePresence } from 'framer-motion';
 
-
-import   { useState ,useEffect } from "react";
+import   { useState } from "react";
 
 const items = [
   {
-    id: 1,
     name: "Chili Cheez Croquette",
     categorie: "Entrées",
     Description:
@@ -29,7 +25,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
-    id: 2,
     name: "Mozzarella Sticks",
     categorie: "Entrées",
     Description:
@@ -39,7 +34,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
-    id: 3,  
     name: "Chicken Nuggets",
     categorie: "Entrées",
     Description:
@@ -49,7 +43,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
-    id:  4,
     name: "Spicy Chicken Nuggets",
     categorie: "Entrées",
     Description:
@@ -59,7 +52,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
-    id: 5,
     name: "Spicy Chicken Tender",
     categorie: "Entrées",
     Description:
@@ -69,7 +61,6 @@ const items = [
     link: " ",
   },
   {
-    id: 6,
     name: "Chicken Tenders",
     categorie: "Entrées",
     Description:
@@ -79,7 +70,6 @@ const items = [
     link: " ",
   },
   {
-    id: 7,
     name: "Triple Cheez Burger",
     categorie: "Burgers beef",
     Description:
@@ -89,7 +79,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090",
   },
   {
-    id: 8,
     name: "Double Baconator",
     categorie: "Burgers beef",
     Description:
@@ -99,7 +88,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090",
   },
   {
-    id: 9,
     name: "Secret Burger",
     categorie: "Burgers beef",
     Description:
@@ -109,7 +97,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id:   10,
     name: "Double Cheez Burger",
     categorie: "Burgers beef",
     Description:
@@ -119,7 +106,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id:11,  
     name: "Truffle Mushroom",
     categorie: "Burgers beef",
     Description:
@@ -129,7 +115,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id: 12,
     name: "Smoky BBQ",
     categorie: "Burgers beef",
     Description:
@@ -139,7 +124,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id:   13,
     name: "Spicy Beef",
     categorie: "Burgers beef",
     Description:
@@ -149,7 +133,6 @@ const items = [
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id: 14,
     name: "Royal Cheez Burger",
     categorie: "Burgers beef",
     Description:
@@ -159,7 +142,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id: 15,
     name: "Cheez Burger",
     categorie: "Burgers beef",
     Description:
@@ -169,7 +151,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
-    id: 16,
     name: "Double Chicken Cheez ",
     categorie: "Burgers chiken",
     Description:
@@ -179,7 +160,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id:  17, 
     name: "Chicken Truffle Mushroom ",
     categorie: "Burgers chiken",
     Description:
@@ -189,7 +169,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id: 18,
     name: "Buffalo Smoky Bbq",
     categorie: "Burgers chiken",
     Description:
@@ -199,7 +178,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id: 19,
     name: "Nashville Hot",
     categorie: "Burgers chiken",
     Description:
@@ -209,7 +187,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id: 20,
     name: "Chicken Cheez",
     categorie: "Burgers chiken",
     Description:
@@ -219,7 +196,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id: 21,
     name: "Fire Chicken",
     categorie: "Burgers chiken",
     Description:
@@ -229,7 +205,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id: 22,
     name: "Crispy Chicken",
     categorie: "Burgers chiken",
     Description: "Potato bun, filet de poulet pané, Smoked Mayo, cornichon.",
@@ -238,7 +213,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
-    id: 23,
     name: "Chicken Cheezy Fries",
     categorie: "Frites",
     Description:
@@ -248,7 +222,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092 ",
   },
   {
-    id: 24,
     name: "Jalapeños Cheezy Fries",
     categorie: "Frites",
     Description:
@@ -258,7 +231,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092 ",
   },
   {
-    id: 25,
     name: "Cheezy Fries",
     categorie: "Frites",
     Description: "Frites maison ",
@@ -267,7 +239,6 @@ const items = [
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092",
   },
   {
-    id: 26,
     name: "Fries",
     categorie: "Frites",
     Description: "Frites maison ",
@@ -276,7 +247,6 @@ const items = [
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092",
   },
   {
-    id: 27,
     name: "Sauce Cheez",
     categorie: "Sauce",
     Description:
@@ -286,7 +256,6 @@ const items = [
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035",
   },
   {
-    id: 28,
     name: "Smoked Ketchup",
     categorie: "Sauce",
     Description:
@@ -296,7 +265,6 @@ const items = [
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035",
   },
   {
-    id: 29,
     name: "Smoked BBQ",
     categorie: "Sauce",
     Description:
@@ -306,7 +274,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 ",
   },
   {
-    id: 30,
     name: "Smoked Mayo",
     categorie: "Sauce",
     Description:
@@ -316,7 +283,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 ",
   },
   {
-    id: 31,
     name: "Mayonnaise à la Truffe ",
     categorie: "Sauce",
     Description:
@@ -326,7 +292,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 ",
   },
   {
-    id: 32,
     name: "Spicy Mayo ",
     categorie: "Sauce",
     Description:
@@ -336,7 +301,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 ",
   },
   {
-    id: 33,
     name: "Lucifer 4.000.000 scoville ",
     categorie: "Sauce",
     Description:
@@ -346,7 +310,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=sauce-c.1491941035 ",
   },
   {
-    id: 34,
     name: "Fondant au Chocolat Noir",
     categorie: "Desserts",
     Description:
@@ -356,7 +319,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=desserts-c.766739089 ",
   },
   {
-    id: 35,
     name: "Classic Milk Chocolate Chip Cookies ",
     categorie: "Desserts",
     Description:
@@ -366,7 +328,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=desserts-c.766739089 ",
   },
   {
-    id: 36,
     name: "Mint Lemonade",
     categorie: "Boissons & Jus",
     Description: "Menthe, citrons jaune et vert, eau",
@@ -375,7 +336,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 37,
     name: "Jus D'orange",
     categorie: "Boissons & Jus",
     Description: "100 % pur jus d'orange",
@@ -384,7 +344,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 38,
     name: "Coca-Cola",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -393,7 +352,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 39,
     name: "Coca-Cola Zéro",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -402,7 +360,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 40,
     name: "Sprite",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -411,7 +368,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 41,
     name: "Hawaï",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -420,7 +376,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 42,
     name: "Pom's",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -429,7 +384,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 43,
     name: "Schweppes Citron",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -438,7 +392,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 44,
     name: "Schweppes Tonic",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -447,7 +400,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 45,
     name: "Orangina",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -456,7 +408,6 @@ const items = [
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088",
   },
   {
-    id: 46,
     name: "Orangina Light",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -465,7 +416,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 47,
     name: "Eau minérale",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -474,7 +424,6 @@ const items = [
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
-    id: 48,
     name: "Eau gazeuse",
     categorie: "Boissons & Jus",
     Description: " ",
@@ -484,23 +433,10 @@ const items = [
   },
 ];
 const menu = () => {
-
-  const [selectedCategory, setSelectedCategory] = useState('All');
-
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-  });
-
-  const iconVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  useEffect(() => {
-   }, [selectedCategory]);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredItems =
-    selectedCategory === 'All'
+    selectedCategory === "All"
       ? items
       : items.filter((item) => item.categorie === selectedCategory);
 
@@ -592,53 +528,35 @@ const menu = () => {
           >
             Boissons & Jus
           </button>
+          {/* Add more category buttons as needed */}
         </div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          variants={iconVariants}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
-          <AnimatePresence>
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
           {filteredItems.map((item) => (
-            <motion.div
-              key={item.id}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={iconVariants}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
-                <a target="_blank" href={item.link}>
-                  <div className="w-full flex justify-center items-center">
-                    <img
-                      className="h-72 w-full object-cover object-center rounded-t-lg"
-                      src={item.img}
-                      alt={item.name}
-                    />
-                  </div>
-                  <div className="p-5 flex flex-col justify-between ">
-                    <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      {item.name}
-                    </p>
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
+              <a target="_blank" href={item.link}>
+                <div className="w-full flex justify-center items-center">
+                  <img
+                    className="h-72 w-full object-cover object-center rounded-t-lg"
+                    src={item.img}
+                    alt={item.name}
+                  />
+                </div>
+                <div className="p-5 flex flex-col justify-between ">
+                  <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {item.name}
+                  </p>
 
-                    <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">
-                      {item.Description}
-                    </p>
-                    <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">
-                      {item.price}
-                    </p>
-                  </div>
-                </a>
-              </div>
-              </motion.div>
-            ))} 
-            </AnimatePresence>
-          </div>
-          </motion.div> 
+                  <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">
+                    {item.Description}
+                  </p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">
+                    {item.price}
+                  </p>
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
       <Footer />
     </>
