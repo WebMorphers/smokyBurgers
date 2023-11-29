@@ -4,13 +4,30 @@ import secret from '../../../assets/secret-burger.png'
 import './Best-sells.css'
 import frita from '../../../assets/frita.svg'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 
 
 const BestSells = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+  
+  const iconVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   
   return (
+    <motion.div
+    ref={ref}
+    initial="hidden"
+    animate={inView ? "visible" : "hidden"}
+    variants={iconVariants}
+    transition={{ duration: 0.5 }}
+   >
     <div id='favorites' className="cont flex flex-col gap-8">
         <div className="text-black text-3xl sm:text-5xl title font-semibold text-center">
           <h1>Our Best Sells Of All Time !</h1>
@@ -52,6 +69,7 @@ const BestSells = () => {
           <p className='desc text-center'>Stop looking at it and come by and grab one!</p>
         </div>
       </div>
+      </motion.div>
   )
 }
 

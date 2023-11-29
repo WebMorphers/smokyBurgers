@@ -2,6 +2,8 @@ import Navbar from "../Navbar/navbar";
 import img from "../../../assets/imaagehero.png";
 
 import "./hero.css";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
  
 const Hero = () => {
   const heroStyle = {
@@ -11,8 +13,23 @@ const Hero = () => {
     height: "100vh",
     width: "100%",
   };
+  const [ref, inView] = useInView({
+    triggerOnce: false,  
+  });
+
+  const iconVariants = {
+    hidden: { opacity: 0, y:  80 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
+    <motion.div
+    ref={ref}
+    initial="hidden"
+    animate={inView ? "visible" : "hidden"}
+    variants={iconVariants}
+    transition={{ duration: 0.5 }}
+   >
     <div
       className="hero w-full z-0 flex flex-col justify-end pb-20 gap-12 items-center bg-[#160808]"
       style={heroStyle}
@@ -29,6 +46,7 @@ const Hero = () => {
         Our menu
       </a>
     </div>
+    </motion.div>
   );
 };
 

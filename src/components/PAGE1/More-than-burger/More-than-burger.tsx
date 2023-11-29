@@ -1,8 +1,25 @@
 import moreburger from "../../../assets/more-burger.png";
 import "./More-than-burger.css";
 import burger from "../../../assets/burger.svg";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 const Moreburger = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+  
+  const iconVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
+    <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={iconVariants}
+          transition={{ duration: 0.5 }}
+         >
     <div className="cont">
       <div className=" flex max-sm:flex-col items-center justify-between xl:justify-center xl:gap-40  gap-12 relative">
         <div className="bg-[#FB8A8A] rounded-[40px] flex justify-center">
@@ -32,7 +49,7 @@ const Moreburger = () => {
           alt=""
         />
       </div>
-    </div>
+    </div></motion.div>
   );
 };
 

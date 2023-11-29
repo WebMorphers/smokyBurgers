@@ -11,6 +11,8 @@ import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
 import Navbar from "../components/PAGE1/Navbar/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
+import { useInView } from 'react-intersection-observer'; 
+import { motion } from 'framer-motion';
 
 import   { useState } from "react";
 
@@ -439,7 +441,14 @@ const menu = () => {
     selectedCategory === "All"
       ? items
       : items.filter((item) => item.categorie === selectedCategory);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
 
+  const iconVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <>
       <div className="bg-gray-700">
@@ -528,35 +537,42 @@ const menu = () => {
           >
             Boissons & Jus
           </button>
-          {/* Add more category buttons as needed */}
         </div>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
-          {filteredItems.map((item) => (
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
-              <a target="_blank" href={item.link}>
-                <div className="w-full flex justify-center items-center">
-                  <img
-                    className="h-72 w-full object-cover object-center rounded-t-lg"
-                    src={item.img}
-                    alt={item.name}
-                  />
-                </div>
-                <div className="p-5 flex flex-col justify-between ">
-                  <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    {item.name}
-                  </p>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={iconVariants}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
+            {filteredItems.map((item) => (
+              <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
+                <a target="_blank" href={item.link}>
+                  <div className="w-full flex justify-center items-center">
+                    <img
+                      className="h-72 w-full object-cover object-center rounded-t-lg"
+                      src={item.img}
+                      alt={item.name}
+                    />
+                  </div>
+                  <div className="p-5 flex flex-col justify-between ">
+                    <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {item.name}
+                    </p>
 
-                  <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">
-                    {item.Description}
-                  </p>
-                  <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">
-                    {item.price}
-                  </p>
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
+                    <p className="mb-3 font-normal text-gray-700  dark:text-gray-400 pb-6 hidden sm:block">
+                      {item.Description}
+                    </p>
+                    <p className="text-2xl font-bold text-gray-900 dark:text-white md:absolute bottom-5 right-0 left-0 m-auto text-center">
+                      {item.price}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            ))} 
+          </div>
+          </motion.div> 
       </div>
       <Footer />
     </>

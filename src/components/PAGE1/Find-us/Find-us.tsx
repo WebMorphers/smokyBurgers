@@ -5,9 +5,26 @@ import phone from "../../../assets/phone-svg.svg";
 import time from "../../../assets/time-svg.svg";
 
 import "./find-us.css";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const FindUs = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+  
+  const iconVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
+    <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={iconVariants}
+          transition={{ duration: 0.5 }}
+         > 
     <div id="Find" className="cont flex justify-center items-center font-semibold">
       <div className="">
         <h1 className="title text-5xl text-center mb-8">Find US</h1>
@@ -39,6 +56,7 @@ const FindUs = () => {
         </div>
       </div>
     </div>
+     </motion.div>
   );
 };
 
