@@ -101,28 +101,6 @@ const Navbar = () => {
           </a>
           <div className="absolute top-0 object-top z-0"></div>
           <li className="p-4">
-<<<<<<< Updated upstream
-            {" "}
-            <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              onClick={() => {
-                scrollToSection("videos"), chang();
-              }}
-              href="#videos"
-            >
-              A PROPOS
-            </a>
-          </li>
-          <li className="p-4">
-            <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              onClick={() => scrollToSection("projects")}
-              href="/menu"
-            >
-              MENU
-            </a>
-          </li>
-=======
           <a
             href="#favorites"
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600"
@@ -166,7 +144,6 @@ const Navbar = () => {
             Menu
           </a>
         </li>
->>>>>>> Stashed changes
         </ul>
       </div>
     </div>
