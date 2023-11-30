@@ -449,12 +449,21 @@ const menu = () => {
         <Navbar />
       </div>
 
+<<<<<<< Updated upstream
       <div className="cont">
         <div className="categories m-7 mt-16 gap-4 md:grid-cols-4 grid grid-cols-2  lg:grid-cols-8  font-mono">
           <button
             className={
               selectedCategory == "All"
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4 "
+=======
+      <div className="cont ">
+        <div className="categories m-7 pt-12 flex justify-between font-mono max-lg:text-xs max-md:text-[7px] w-full ">
+          <button
+            className={
+              selectedCategory == "All"
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : " hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("All")}
@@ -464,7 +473,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Entrées"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px] "
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Entrées")}
@@ -474,7 +487,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Burgers beef"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Burgers beef")}
@@ -484,7 +501,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Burgers chiken"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Burgers chiken")}
@@ -494,7 +515,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Frites"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Frites")}
@@ -504,7 +529,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Sauce"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Sauce")}
@@ -514,7 +543,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Desserts"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Desserts")}
@@ -524,7 +557,11 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Boissons & Jus"
+<<<<<<< Updated upstream
                 ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
+=======
+                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4 max-lg:text-base max-md:text-[10px]"
+>>>>>>> Stashed changes
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Boissons & Jus")}
@@ -533,7 +570,7 @@ const menu = () => {
           </button>
           {/* Add more category buttons as needed */}
         </div>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 ">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-7 justify-items-center items-center">
           {filteredItems.map((item) => (
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:relative hover:bg-slate-500  transition-all hover:scale-105">
               <a target="_blank" href={item.link}>

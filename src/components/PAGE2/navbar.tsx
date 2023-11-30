@@ -15,8 +15,9 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
+      const middlePosition = section.offsetTop + section.offsetHeight / 2;
       window.scrollTo({
-        top: section.offsetTop,
+        top: middlePosition,
         behavior: "smooth",
       });
     }
@@ -38,7 +39,7 @@ const Navbar = () => {
       navigate("/");
       setTimeout(() => {
         scrollToSection(sectionId);
-      }, 500); // Adjust the delay as needed
+      }, 500);  
     } else {
       scrollToSection(sectionId);
     }
@@ -80,7 +81,7 @@ const Navbar = () => {
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            onClick={() => scrollToSection("projects")}
+            
             href="/menu"
           >
             Menu
@@ -108,51 +109,60 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col justify-center items-center">
-          <a href="/">
+          <a onClick={() => {
+              chang();
+            }} href="/">
             <img className="h-20 w-23" src={logo} alt="" />
           </a>
           <div className="absolute top-0 object-top z-0"></div>
-          <li className="p-4 ">
-            <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              onClick={() => {
-                navigateAndScrollToSection("Favorites"), chang();
-              }}
-              href="/"
-            >
-              Favorites
-            </a>
-          </li>
           <li className="p-4">
-            {" "}
-            <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              onClick={() => {
-                navigateAndScrollToSection("videos"), chang();
-              }}
-              href="#about"
-            >
-              Videos
-            </a>
-          </li>
-          <li className="p-4">
-            <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              href="/menu"
-            >
-              MENU
-            </a>
-          </li>
-          <li className="p-4">
-            <a
-              onClick={() => {
-                navigateAndScrollToSection("Find"), chang();
-              }}
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-            >
-              Find us
-            </a>
-          </li>
+          <a
+             
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600"
+            onClick={() => {
+              navigateAndScrollToSection("Favorites");
+              chang();
+            }}
+            
+          >
+            Favorites
+          </a>
+        </li>
+        <li className="p-4">
+          <a
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
+             
+            onClick={() => {
+              navigateAndScrollToSection("Videos");
+              chang();
+            }}
+          >
+            Videos
+          </a>
+        </li>
+        <li className="p-4">
+          <a
+             
+            onClick={() => {
+              navigateAndScrollToSection("Find");
+              chang();
+            }}
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600"
+          >
+            Find us
+          </a>
+        </li>
+        <li className="p-4">
+          <a
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
+            href="/menu"
+            onClick={() => {
+              chang();
+            }}
+          >
+            Menu
+          </a>
+        </li>
         </ul>
       </div>
     </div>

@@ -41,7 +41,10 @@ const Navbar = () => {
       </a>
       <ul className="hidden md:flex">
         <li className="p-4">
-          <a href="#favorites" className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600">
+          <a
+            href="#favorites"
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600"
+          >
             Favorites
           </a>
         </li>
@@ -54,23 +57,21 @@ const Navbar = () => {
           </a>
         </li>
         <li className="p-4">
-          <a onClick={() => {
-              scrollToSection("Find") 
-            }} className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600">
+          <a
+            href="#Find"
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600"
+          >
             Find us
           </a>
         </li>
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            
             href="/menu"
           >
             Menu
           </a>
         </li>
-        
-        
       </ul>
       <div></div>
 
@@ -93,22 +94,14 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col justify-center items-center">
-          <a href="/" onClick={() => scrollToSection("hello")}>
+          <a onClick={() => {
+              chang();
+            }} href="/">
             <img className="h-20 w-23" src={logo} alt="" />
           </a>
           <div className="absolute top-0 object-top z-0"></div>
-          <li className="p-4 ">
-            <a
-              className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
-              onClick={() => {
-                scrollToSection("projects"), chang();
-              }}
-              href="/"
-            >
-              ACCUEIL
-            </a>
-          </li>
           <li className="p-4">
+<<<<<<< Updated upstream
             {" "}
             <a
               className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
@@ -129,6 +122,51 @@ const Navbar = () => {
               MENU
             </a>
           </li>
+=======
+          <a
+            href="#favorites"
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-red-600"
+            onClick={() => {
+              chang();
+            }}
+          >
+            Favorites
+          </a>
+        </li>
+        <li className="p-4">
+          <a
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
+            href="#videos"
+            onClick={() => {
+              chang();
+            }}
+          >
+            Videos
+          </a>
+        </li>
+        <li className="p-4">
+          <a
+            href="#Find"
+            onClick={() => {
+              chang();
+            }}
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-red-600"
+          >
+            Find us
+          </a>
+        </li>
+        <li className="p-4">
+          <a
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
+            href="/menu"
+            onClick={() => {
+              chang();
+            }}
+          >
+            Menu
+          </a>
+        </li>
+>>>>>>> Stashed changes
         </ul>
       </div>
     </div>
