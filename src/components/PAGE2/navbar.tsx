@@ -78,15 +78,7 @@ const Navbar = () => {
             Find us
           </a>
         </li>
-        <li className="p-4">
-          <a
-            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            
-            href="/menu"
-          >
-            Menu
-          </a>
-        </li>
+         
       </ul>
       <div></div>
 
@@ -151,18 +143,7 @@ const Navbar = () => {
           >
             Find us
           </a>
-        </li>
-        <li className="p-4">
-          <a
-            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-[#FE181A]"
-            href="/menu"
-            onClick={() => {
-              chang();
-            }}
-          >
-            Menu
-          </a>
-        </li>
+        </li> 
         </ul>
       </div>
     </div>
