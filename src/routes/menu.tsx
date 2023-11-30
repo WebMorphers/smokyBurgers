@@ -11,6 +11,14 @@ import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
 import Navbar from "../components/PAGE2/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
+import Entrees from "../assets/nuggets_1.svg"
+import BeefBurger from "../assets/burger-au-fromage.svg"
+import ChickenBurger from "../assets/burger-_1_.svg"
+import Fries from "../assets/patates-frites.svg"
+import Sauce from "../assets/sauces.svg"
+import Desserts from "../assets/dessert.svg"
+import Drinks from "../assets/soda.svg"
+
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -450,7 +458,7 @@ const menu = () => {
       </div>
 
       <div className="cont">
-        <div className="categories m-7 mt-16 gap-4 md:grid-cols-4 grid grid-cols-2  lg:grid-cols-8  font-mono">
+        <div className="categories m-7 mt-16 gap-y-4 md:grid-cols-4 grid grid-cols-2  lg:grid-cols-8  font-mono">
           <button
             className={
               selectedCategory == "All"
@@ -459,7 +467,7 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("All")}
           >
-            All
+              All
           </button>
           <button
             className={
@@ -469,7 +477,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Entrées")}
           >
-            Entrées
+            <div className="flex justify-center gap-1 items-center">
+              <img src={Entrees} alt="Entrees" />
+              Entrées
+            </div>
           </button>
           <button
             className={
@@ -479,7 +490,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Burgers beef")}
           >
+            <div className="flex justify-center gap-1 items-center">
+              <img src={BeefBurger} alt="Entrees" />
             Burgers beef
+            </div>
           </button>
           <button
             className={
@@ -489,7 +503,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Burgers chiken")}
           >
+          <div className="flex justify-center gap-1 items-center">
+              <img src={ChickenBurger} alt="Entrees" />
             Burgers chiken
+            </div>
           </button>
           <button
             className={
@@ -499,7 +516,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Frites")}
           >
+          <div className="flex justify-center gap-1 items-center">
+              <img src={Fries} alt="Entrees" />
             Frites
+            </div>
           </button>
           <button
             className={
@@ -509,7 +529,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Sauce")}
           >
-            Sauce
+            <div className="flex justify-center gap-1 items-center">
+              <img src={Sauce} alt="Entrees" />
+              Sauce
+            </div>
           </button>
           <button
             className={
@@ -519,7 +542,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Desserts")}
           >
+            <div className="flex justify-center gap-1 items-center">
+              <img src={Desserts} alt="Entrees" />
             Desserts
+            </div>
           </button>
           <button
             className={
@@ -529,7 +555,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Boissons & Jus")}
           >
+            <div className="flex justify-center gap-1 items-center">
+              <img src={Drinks} alt="Entrees" />
             Boissons & Jus
+            </div>
           </button>
           {/* Add more category buttons as needed */}
         </div>
