@@ -450,7 +450,7 @@ const menu = () => {
       </div>
 
       <div className="cont">
-        <div className="categories m-7 pt-12 flex justify-between ">
+        <div className="categories m-7 pt-12 flex justify-between font-mono">
           <button
             className={
               selectedCategory == "All"
@@ -543,7 +543,8 @@ const menu = () => {
                     src={item.img}
                     alt={item.name}
                     effect="blur"
-                  />
+                    width="100%"
+                    />
                 </div>
                 <div className="p-5 flex flex-col justify-between ">
                   <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
