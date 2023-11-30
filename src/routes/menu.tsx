@@ -24,7 +24,7 @@ const items = [
     Description:
       "Croustillantes, généreusement garnies de fromage fondant et rehaussées d'une saveur relevée.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jpohs1y6jzqilexdx69y",
-    price: "42,00 MAD",
+    price: "32,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
@@ -42,7 +42,7 @@ const items = [
     Description:
       "100% filet de poulet, mariné et pané maison, dans notre mélange d’épices secret.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bn2tjtdsnfuadv6fbca7",
-    price: "38,00 MAD",
+    price: "30,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
@@ -51,7 +51,7 @@ const items = [
     Description:
       "Pour les amateurs de piquant, nos nuggets saupoudrés de notre mélange spicy.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bn2tjtdsnfuadv6fbca7",
-    price: "38,00 MAD",
+    price: "30,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=entrees-c.766739091 ",
   },
   {
@@ -60,7 +60,7 @@ const items = [
     Description:
       "Pour les amateurs de piquant, nos tenders saupoudrés de notre mélange spicy.",
     img: "https://images.deliveryhero.io/image/menus-glovo/products/5bfe5b57be06a958dce764743c52c322876d150cfd06c3a3a077d487e46d5d52?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
-    price: "38,00 MAD",
+    price: "30,00 MAD",
     link: " ",
   },
   {
@@ -69,7 +69,7 @@ const items = [
     Description:
       "Aiguillettes de poulet marinées et panées maison, avec notre mélange d’épices secret.",
     img: "https://images.deliveryhero.io/image/menus-glovo/products/5bfe5b57be06a958dce764743c52c322876d150cfd06c3a3a077d487e46d5d52?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
-    price: "38,00 MAD",
+    price: "30,00 MAD",
     link: " ",
   },
   {
@@ -78,7 +78,7 @@ const items = [
     Description:
       "Potato bun, triple viande hachée fumée au bois de pommier (300 gr), triple cheddar fumé, oignon blanc, ketchup fumé, moutarde, cornichon, oignon frit",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/eewnjrrfzu4laazi7vr8",
-    price: "95,00 MAD",
+    price: "85,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090",
   },
   {
@@ -87,7 +87,7 @@ const items = [
     Description:
       "Potato Bun, Double Bacon de Boeuf, Double viande hachée fumée au bois de pommiers (200gr), Double Cheddar, Oignon frit, Ketchup, Smoked Mayo.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/m0wdq5e1dy3yagy7j1kq",
-    price: "90,00 MAD",
+    price: "80,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090",
   },
   {
@@ -96,7 +96,7 @@ const items = [
     Description:
       "Potato Bun, Double Viande hachée fumée au bois de pommier (200 gr), Double Cheddar fumé, Champignon de paris, Mayonnaise à la truffe, Oignon frit.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/llfeieqkmtsy8xrkzaqh",
-    price: "85,00 MAD",
+    price: "75,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -105,7 +105,7 @@ const items = [
     Description:
       "Potato bun, double viande hachée fumée au bois de pommier (200 gr), double cheddar fumé, oignon blanc, ketchup fumé, moutarde, cornichon.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/qxnt7bjvor1ltbcxalsz",
-    price: "75,00 MAD",
+    price: "65,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -114,7 +114,7 @@ const items = [
     Description:
       "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, champignons de paris, mayonnaise à la truffe.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/pofdwlszltkuhb4uqfnw",
-    price: "70,00 MAD",
+    price: "60,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -123,7 +123,7 @@ const items = [
     Description:
       "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, tomate, oignon rouge, oignon caramélisé, cornichon, salade iceberg, sauce bbq fumée",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/aiuwcnfsppeqnwpqyy01",
-    price: "65,00 MAD",
+    price: "55,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -132,7 +132,7 @@ const items = [
     Description:
       "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, tomate, oignon rouge, oignon frit, pickles de piment, cornichon, salade iceberg, sauce spicy mayo",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jljqr05wgsw1yqqjwztm",
-    price: "65,00 MAD",
+    price: "55,00 MAD",
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -141,7 +141,7 @@ const items = [
     Description:
       "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, oignon blanc, cornichon, salade iceberg, oignon frit, tomate, Ketchup, Smoked Mayo.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/fg2chqmhzp7l45g7vgnk",
-    price: "60,00 MAD",
+    price: "50,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -150,7 +150,7 @@ const items = [
     Description:
       "Potato bun, viande hachée fumée au bois de pommier (100 gr), cheddar fumé, oignon blanc, Ketchup fumé, moutarde, cornichon",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/u5jh892wtv8k50t68ay9",
-    price: "50,00 MAD",
+    price: "45,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-beef-c.766739090 ",
   },
   {
@@ -159,7 +159,7 @@ const items = [
     Description:
       "Potato Bun, Double Filet de poulet pané (200gr), Double Cheddar fumé, oignon blanc, cornichon, Ketchup, Moutarde.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/omwzwz7vueyal3buutom",
-    price: "75,00 MAD",
+    price: "65,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -168,7 +168,7 @@ const items = [
     Description:
       "Potato bun, filet de poulet pané, Cheddar Fumé, Champignon de Paris sauté, Mayonnaise à la Truffe.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/oqd0dglbnijunqoepdgp",
-    price: "70,00 MAD",
+    price: "60,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -177,7 +177,7 @@ const items = [
     Description:
       "Potato bun, filet de poulet pané, cheddar fumé, tomate, oignon rouge, oignon caramélisé, cornichon, salade iceberg, sauce BBQ fumé.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/oeedsi4kpbq7zqic2p9j",
-    price: "65,00 MAD",
+    price: "55,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -186,7 +186,7 @@ const items = [
     Description:
       "Potato bun, filet de poulet pané, cheddar fumé, tomate, oignon rouge, oignon frit, pickles de piment, cornichon, salade iceberg, sauce spicy mayo",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/lymgytkuonr3tbes5lbn",
-    price: "65,00 MAD",
+    price: "55,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -195,7 +195,7 @@ const items = [
     Description:
       "Potato bun, filet de poulet pané, cheddar fumé, oignon blanc, ketchup fumé, moutarde, cornichon.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/wg4kwfusqaqe7epalekc",
-    price: "50,00 MAD",
+    price: "45,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -204,7 +204,7 @@ const items = [
     Description:
       "Potato bun, filet de poulet pané, cheddar fumé, pickle de piment, Spicy Smoked Ketchup //!\\ Warning : For spicy lovers only //!\\",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/e4hl7gj1kv8wtwf1azmb",
-    price: "50,00 MAD",
+    price: "45,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -212,7 +212,7 @@ const items = [
     categorie: "Burgers chiken",
     Description: "Potato bun, filet de poulet pané, Smoked Mayo, cornichon.",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zkw82vkdbym0hngncfxi",
-    price: "45,00 MAD",
+    price: "40,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=burgers-chicken-c.766739085 ",
   },
   {
@@ -221,7 +221,7 @@ const items = [
     Description:
       "Nuggets de poulet, oignon frit, Frites, Homemade Cheezy Sauce au Cheddar fumé !",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/yd5gwssz28rypeji286c",
-    price: "45,00 MAD",
+    price: "35,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092 ",
   },
   {
@@ -230,7 +230,7 @@ const items = [
     Description:
       "Jalapeños , oignon frit, Frites, Homemade Cheezy Sauce au Cheddar fumé !",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ikioksqb3zjf9gxdxbkp",
-    price: "40,00 MAD",
+    price: "30,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092 ",
   },
   {
@@ -238,7 +238,7 @@ const items = [
     categorie: "Frites",
     Description: "Frites maison ",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/cd4q8dqb8g6f3bdrpor7",
-    price: "35,00 MAD",
+    price: "25,00 MAD",
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092",
   },
   {
@@ -246,7 +246,7 @@ const items = [
     categorie: "Frites",
     Description: "Frites maison ",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/gayyhqpwowsrswwgdqin",
-    price: "20,00 MAD",
+    price: "15,00 MAD",
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=frites-c.766739092",
   },
   {
@@ -318,7 +318,7 @@ const items = [
     Description:
       "Avec sa croûte croustillante et son cœur coulant, ce fondant est un véritable délice pour les papilles. Laissez-vous tenter et régalez-vous avec cette gourmandise irrésistible !",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mwoavawweurytknnphz9",
-    price: "40,00 MAD",
+    price: "30,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=desserts-c.766739089 ",
   },
   {
@@ -335,7 +335,7 @@ const items = [
     categorie: "Boissons & Jus",
     Description: "Menthe, citrons jaune et vert, eau",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vt1x0p2pmdw7olywafqr",
-    price: "30,00 MAD",
+    price: "20,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
@@ -343,7 +343,7 @@ const items = [
     categorie: "Boissons & Jus",
     Description: "100 % pur jus d'orange",
     img: "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/f1huiexyzsjkb85c481a",
-    price: "25,00 MAD",
+    price: "20,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
@@ -423,7 +423,7 @@ const items = [
     categorie: "Boissons & Jus",
     Description: " ",
     img: ciel,
-    price: "17,00 MAD",
+    price: "10,00 MAD",
     link: "https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088 ",
   },
   {
@@ -431,7 +431,7 @@ const items = [
     categorie: "Boissons & Jus",
     Description: " ",
     img: ouelmas,
-    price: "17,00 MAD",
+    price: "10,00 MAD",
     link: " https://glovoapp.com/ma/fr/casablanca/smoky-burgers/?content=boissons-jus-c.766739088",
   },
 ];
@@ -450,11 +450,11 @@ const menu = () => {
       </div>
 
       <div className="cont">
-        <div className="categories m-7 pt-12 flex justify-between font-mono">
+        <div className="categories m-7 mt-16 gap-4 md:grid-cols-4 grid grid-cols-2  lg:grid-cols-8  font-mono">
           <button
             className={
               selectedCategory == "All"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4 "
                 : " hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("All")}
@@ -464,7 +464,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Entrées"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Entrées")}
@@ -474,7 +474,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Burgers beef"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Burgers beef")}
@@ -484,7 +484,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Burgers chiken"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Burgers chiken")}
@@ -494,7 +494,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Frites"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Frites")}
@@ -504,7 +504,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Sauce"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Sauce")}
@@ -514,7 +514,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Desserts"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Desserts")}
@@ -524,7 +524,7 @@ const menu = () => {
           <button
             className={
               selectedCategory == "Boissons & Jus"
-                ? "text-red-600 text-xl font-medium p-2 border-b-red-600 border-b-4"
+                ? "text-red-600 text-xl font-medium p-4 border-b-red-600 border-b-4"
                 : "hover:scale-105 hover:text-red-600"
             }
             onClick={() => setSelectedCategory("Boissons & Jus")}

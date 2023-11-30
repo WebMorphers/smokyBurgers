@@ -113,9 +113,9 @@ const Navbar = () => {
             <a
               className="no-underline mx-4 cursor-pointer font-thin text-black hover:text-red-600"
               onClick={() => {
-                scrollToSection("projects"), chang();
+                scrollToSection("videos"), chang();
               }}
-              href="#about"
+              href="#videos"
             >
               A PROPOS
             </a>
