@@ -1,8 +1,8 @@
-import "./footer.css";
-import logo from "../../../assets/logohd.png";
-import insta from "../../../assets/instagram-svg.svg";
-import glovo from "../../../assets/glovo-svg.svg";
-import tiktok from "../../../assets/tiktok-svg.svg";
+import "../PAGE1/Footer/footer.css";
+import logo from "../../../src/assets/logohd.png";
+import insta from "../../../src/assets/instagram-svg.svg";
+import glovo from "../../../src/assets/glovo-svg.svg";
+import tiktok from "../../../src/assets/tiktok-svg.svg";
 
 const Footer = () => {
   return (
@@ -10,14 +10,7 @@ const Footer = () => {
     <div className="bg-black text-white">
       <div className="md:px-24 py-10 px-7 w-full">
         <div className="flex flex-col gap-5 ">
-          <div className="flex justify-between flex-wrap-reverse max-sm:justify-center">
-            <div className="grid max-sm:grid-cols-2 grid-cols-4 w-[70%] gap-y-3">
-                <a href="#favorites" className="hover:text-red-600 flex justify-center items-center ">Favorites</a>
-                <a href="#videos" className="hover:text-red-600 flex justify-center items-center ">Videos</a>
-                <a href="#Find" className="hover:text-red-600 flex justify-center items-center ">Find Us</a>
-                <a href="/menu" className="hover:text-red-600 flex justify-center items-center ">Menu</a>
-            </div>
-            <div className="flex items-end justify-end lg:gap-7">
+          <div className="flex justify-center items-center flex-wrap-reverse max-sm:justify-center gap-32  ">  
             <a
                 href="https://www.instagram.com/smokyburgersmaroc/"
                 target="-blank"
@@ -33,13 +26,12 @@ const Footer = () => {
               <a href="https://www.tiktok.com/@smokyburgers" target="-blank">
                 <img className="hover:scale-125" src={tiktok} alt="" />{" "}
               </a>
-            </div>
-            <div>
               <a href="/">
                 <img className="h-20 w-23" src={logo} alt="" />
               </a>
             </div>
-          </div>
+            
+           
           <div  className="lg:h-1 h-[2px] lg:px-40"><div className="bg-white h-full rounded-lg "></div></div>
           <div className="text-right">
           <p>
