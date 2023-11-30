@@ -15,32 +15,23 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const middlePosition = section.offsetTop + section.offsetHeight / 2;
+       console.log(`Scrolling to ${sectionId} at position ${section.offsetTop}`);
       window.scrollTo({
-        top: middlePosition,
+        top: section.offsetTop,
         behavior: "smooth",
       });
     }
   };
-  useEffect(() => {
-    const internalLinks = document.querySelectorAll('a[href^="#"]');
-    internalLinks.forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute("href")?.slice(1);
-        if (targetId) {
-          scrollToSection(targetId);
-        }
-      });
-    });
-  }, []);
   const navigateAndScrollToSection = (sectionId: string) => {
     if (window.location.pathname === "/menu") {
+      console.log("Navigating to '/'");
       navigate("/");
       setTimeout(() => {
+        console.log(`Scrolling to ${sectionId}`);
         scrollToSection(sectionId);
-      }, 500);  
+      }, 500);
     } else {
+      console.log(`Scrolling to ${sectionId}`);
       scrollToSection(sectionId);
     }
   };
