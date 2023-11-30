@@ -11,10 +11,10 @@ import CocaZero from "../assets/Coca-Cola-Zero.png";
 import Coca from "../assets/Coca-Cola.png";
 import Navbar from "../components/PAGE2/navbar";
 import Footer from "../components/PAGE1/Footer/Footer";
-import Entrees from "../assets/nuggets_1.svg"
-import BeefBurger from "../assets/burger-au-fromage.svg"
-import ChickenBurger from "../assets/burger-_1_.svg"
-import Fries from "../assets/patates-frites.svg"
+import Entrees from "../assets/nuggets.svg"
+import BeefBurger from "../assets/BeefBurger.svg"
+import ChickenBurger from "../assets/ChickenBurger.svg"
+import Fries from "../assets/fries.svg"
 import Sauce from "../assets/sauces.svg"
 import Desserts from "../assets/dessert.svg"
 import Drinks from "../assets/soda.svg"
