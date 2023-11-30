@@ -463,7 +463,7 @@ const menu = () => {
       </div>
 
       <div className="cont">
-        <div className="categories m-7 mt-16 gap-y-4 md:grid-cols-4 grid grid-cols-2  lg:grid-cols-8  font-mono">
+        <div className="categories mb-7 gap-y-4 md:grid-cols-4 grid grid-cols-2  lg:grid-cols-8  font-mono">
           <button
             className={
               selectedCategory == "All"
