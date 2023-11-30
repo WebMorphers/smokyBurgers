@@ -14,6 +14,8 @@ import vid11 from "../../../assets/vid-snor.mp4";
 import vid12 from "../../../assets/vid-toto.mp4";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import './About-us.css'
+
 
 interface LazyLoadVideoProps {
   videoSrc: string;
@@ -26,17 +28,20 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ videoSrc }) => {
 
   return (
     <div ref={ref}>
-      {inView && (
+    {inView && (
+      <div className="w-full">
         <HoverVideoPlayer
           loop={true}
           restartOnPaused
           loading="lazy"
           videoSrc={videoSrc}
         />
+      </div>
+    )}
+  </div>
+
       )}
-    </div>
-  );
-};
+
 
 const AboutUs = () => {
   const [ref, inView] = useInView({
@@ -55,6 +60,7 @@ const AboutUs = () => {
       variants={iconVariants}
       transition={{ duration: 0.5 }}
       id="videos"
+      
     >
       <div id="videos" className="cont">
         <div className=" flex flex-col justify-center items-center gap-5">
