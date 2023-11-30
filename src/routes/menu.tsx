@@ -477,9 +477,9 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Entrées")}
           >
-            <div className="flex justify-center gap-1 items-center">
+            <div className="flex justify-between px-2 gap-1 items-center">
               <img src={Entrees} alt="Entrees" />
-              Entrées
+              <div className="w-full">Entrées</div>          
             </div>
           </button>
           <button
@@ -490,9 +490,9 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Burgers beef")}
           >
-            <div className="flex justify-center gap-1 items-center">
+            <div className="flex justify-between px-2 gap-1 items-center">
               <img src={BeefBurger} alt="Entrees" />
-            Burgers beef
+              <div className="w-full">Burgers beef</div>          
             </div>
           </button>
           <button
@@ -503,9 +503,9 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Burgers chiken")}
           >
-          <div className="flex justify-center gap-1 items-center">
+          <div className="flex justify-between px-2 gap-1 items-center">
               <img src={ChickenBurger} alt="Entrees" />
-            Burgers chiken
+              <div className="w-full">Burgers chiken</div>          
             </div>
           </button>
           <button
@@ -516,9 +516,10 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Frites")}
           >
-          <div className="flex justify-center gap-1 items-center">
+          <div className="flex justify-between px-2 gap-1 items-center">
               <img src={Fries} alt="Entrees" />
-            Frites
+              <div className="w-full">Fries</div>          
+
             </div>
           </button>
           <button
@@ -529,9 +530,9 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Sauce")}
           >
-            <div className="flex justify-center gap-1 items-center">
+            <div className="flex justify-between px-2 gap-1 items-center">
               <img src={Sauce} alt="Entrees" />
-              Sauce
+              <div className="w-full">Sauce</div>          
             </div>
           </button>
           <button
@@ -542,9 +543,9 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Desserts")}
           >
-            <div className="flex justify-center gap-1 items-center">
+            <div className="flex justify-between px-2 gap-1 items-center">
               <img src={Desserts} alt="Entrees" />
-            Desserts
+              <div className="w-full">Desserts</div> 
             </div>
           </button>
           <button
@@ -555,9 +556,9 @@ const menu = () => {
             }
             onClick={() => setSelectedCategory("Boissons & Jus")}
           >
-            <div className="flex justify-center gap-1 items-center">
+            <div className="flex justify-between px-2 gap-1 items-center">
               <img src={Drinks} alt="Entrees" />
-            Boissons & Jus
+              <div className="w-full">Boissons & Jus</div>          
             </div>
           </button>
           {/* Add more category buttons as needed */}
