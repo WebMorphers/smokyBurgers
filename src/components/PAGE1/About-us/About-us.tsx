@@ -65,8 +65,8 @@ const AboutUs = () => {
       <div id="videos" className="cont">
         <div className=" flex flex-col justify-center items-center gap-5">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl title text-center">
-            Taste Like Never Before .
-          </h1>
+          We're waiting for you…
+                    </h1>
 
           <h1 className="text-sky-950 text-center">
             Follow{" "}
