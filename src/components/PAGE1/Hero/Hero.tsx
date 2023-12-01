@@ -25,7 +25,7 @@ const Hero = () => {
       </h1>
       <a
         href="/menu"
-        className="bg-[#FE181A] text-white om font-medium text-xl p-2 px-3  border-white border rounded-2xl bottom-36 transition-transform duration-500 ease-in-out transform hover:scale-110 "
+        className="bg-[#FE181A] hover:shadow-2xl hover:shadow-red-500 text-white om font-medium text-xl p-2 px-3  border-white border rounded-2xl bottom-36 transition-transform duration-500 ease-in-out transform hover:scale-110 "
       >
         Our menu
       </a>
